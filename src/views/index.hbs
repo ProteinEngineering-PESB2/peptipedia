@@ -1,0 +1,89 @@
+<div class="row">
+  <div class="col-lg-6">
+    <h2>Representative scheme of building and characteristics of Peptipedia</h2>
+    <br>
+    <p>Peptipedia is a computational tool forpeptide sequence analysis. The information presented by our tool was consolidated from 30 databases, considering informationon the sequence, taxonomy, and different properties of stored peptides. Searching for sequences and relevant information in our web application is easy, personalised and intuitive, allowing download the information in multiple formats. Peptipedia has enabled different tools that will help characterise and analyse sequences, as well as functionalities supported by MachineLearning methods that facilitate the development of predictive models and an activity predictor system.</p>
+  </div>
+  <div class="col-lg-6">
+    <img class="img-fluid rounded" src="img/1.jpg" alt="" width="90%">
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded" src="img/2.svg" alt="">
+  </div>
+  <div class="col-lg-6">
+    <h2>Information in Peptipedia</h2>
+    <br>
+    <p>Our database has 92055 registered and characterized peptides, currently the peptide database with the most extensive registrations to date. According to our system of categories proposed in this work, we classify peptides, suggesting ten main categories. Each of them has subcategories or different levels of classification, according to previously reported activities. Remarkably,  we generate our platform's database system, integrating the information from 30 previously reported repositories or tools.</p>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-lg-6">
+    <h2>Peptide moonlight</h2>
+    <br>
+    <p>Peptides are relevant due to their magnetic therapeutic properties and their applications in the field of biotechnology. Many peptides have different activities at the same time. That is, they can have a therapeutic role, and they can also have signal peptide activity. In a simple way, we analyze the relationships of dependence or mutuality of information between peptides, where activities are sought simultaneously, and how they are related. It is interesting to demonstrate that signal and sensory peptides are related to therapeutic peptides.</p>
+  </div>
+  <div class="col-lg-6">
+    <img class="img-fluid rounded" src="img/3.svg" alt="">
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid rounded" src="img/4.svg" alt="">
+  </div>
+  <div class="col-lg-6">
+    <h2>Frequency of residues</h2>
+    <br>
+    <p>It is possible to evaluate the amino acid count according to activity and determine patterns to analyze trends or preferences according to their activity. Using this information, the sequences' average amino acid frequency was analyzed by activity or category, according to the ten main proposals in our work. The drug delivery vehicle category has a clear tendency to prefer Arginine residues. While signal peptides, propeptide, and transit peptide show patterns of similar amino acid content. However, there are no clear trends for the rest of the activities.</p>
+  </div>
+</div>
+<br><br>
+
+
+
+
+
+
+<div id="all" class="card">
+    <h5 class="card-header">Activities</h5>
+    <div class="card-body">
+        <div class="row mb-2">
+        {{#each statistics_full}}
+        <div class="card col-md-3 col-lg-3 col-sm-1 col-xs-1">
+                <div class="card-body">
+                    <h5 class="card-title activity_names">{{matrix Name Name}}</h5>
+                    <p class="card-text">{{matrix Name Description}}</p>
+                    <a id="{{matrix Name Name}}" class="btn btn-primary" onclick="myFunction(this)" >See details</a>
+                </div>
+            </div>
+        {{/each}}
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+  function myFunction(elem) {
+        //location.href = 'details?activity='+elem.id;
+        if(elem.id == 'Drug delivery vehicle'){
+            elem.id = 'Drugdeliveryvehicle'
+        }
+        if(elem.id == 'Other activity'){
+            elem.id = 'Otheractivity'
+        }
+        if(elem.id == 'Neurological activity'){
+            elem.id = 'Neurologicalactivity'
+        }
+        if(elem.id == 'Immunological activity'){
+            elem.id = 'Immunologicalactivity'
+        }
+        location.href = 'details/'+elem.id;
+    } 
+</script>

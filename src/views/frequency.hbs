@@ -1,0 +1,148 @@
+<link rel="stylesheet" href="/css/buttons.dataTables.min.css">
+<div class="jumbotron mt-4">
+    <h1 class="display-4">Statistical Residue Analysis</h1>
+    <br>
+    <p class="lead">Peptipedia allows making trend analysis of amino acids in a sequence or a set of them, counting the proportion of residues in the input sequence. If it is only one sequence, the tool displays a pie chart with the analyzed frequency. Otherwise, a summary table is generated for each summary trend for each sequence, and a graph is developed with the average trend for the set of sequences entered.</p>
+</div>
+
+
+<div class="card">
+    <h5 class="card-header">Inputs</h5>    
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Sequences in FASTA format:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select the type of analysis:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                <option value="1">Percentage</option>
+                <option value="2">Count</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button id="btn1" type='button' class="btn btn-success btn-lg">Calculate</button>
+                <button type='button' class="btn btn-dark btn-lg" onclick="javascript:eraseText();">Clear</button>
+                <div hidden id="error_alert" class="alert alert-danger mt-3" role="alert">Data entry error</div>
+            </div>
+            
+        </form>
+    </div>
+    <div hidden id="wait" class="text-center">
+    <h2>The results are being processed, this will take a few seconds</h2>
+    <i class="fa-5x fas fa-cog fa-spin"></i>
+    <br>
+    <br>
+    </div>
+    <div hidden id="all" class="card">
+    <h5 class="card-header">Results</h5>    
+    <div class="card-body">
+        <div class="table-responsive">
+            <table id="tabla" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                    <th scope="col">Sequence id</th>
+                    <th scope="col">A</th>
+                    <th scope="col">R</th>
+                    <th scope="col">N</th>
+                    <th scope="col">D</th>
+                    <th scope="col">C</th>
+                    <th scope="col">Q</th>
+                    <th scope="col">E</th>
+                    <th scope="col">G</th>
+                    <th scope="col">H</th>
+                    <th scope="col">I</th>
+                    <th scope="col">L</th>
+                    <th scope="col">K</th>
+                    <th scope="col">M</th>
+                    <th scope="col">F</th>
+                    <th scope="col">P</th>
+                    <th scope="col">S</th>
+                    <th scope="col">T</th>
+                    <th scope="col">W</th>
+                    <th scope="col">Y</th>
+                    <th scope="col">V</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <h5 class="card-header">Graph</h5>    
+    <div class="card-body">
+        <div class="col-sm-12" id="graph"></div>
+    </div>
+    </div>
+</div>
+
+
+<script src="/js/dataTables.buttons.min.js"></script>
+<script src="/js/buttons.html5.min.js"></script>
+<script src="/js/pdfmake.min.js"></script>
+<script src="/js/buttons.flash.min.js"></script>
+<script src="/js/vfs_fonts.js"></script>
+
+<script>
+$("#btn1").click(function(){
+    var now = new Date().getTime();
+    $('#wait').attr('hidden', false);       
+    $('#all').attr('hidden', true);     
+        $.ajax({
+            //'url': "http://localhost/frequency/results",
+            'url': "http://peptipedia.cl/frequency/results",
+            'method': 'POST',
+            'data' : { "sequences" : $("#exampleFormControlTextarea1").val(), "time": now, "option" : $("#exampleFormControlSelect1").val()}
+        }).done( function(data) {
+            if (data != "error"){
+                $('#wait').attr('hidden', true);
+                $("#tabla td").remove();
+                $('#all').attr('hidden', false);   
+                var json = jQuery.parseJSON(data[0]);
+                for (element in json.data){
+                    
+                    $('#tabla').append('<tr id=row'+element+'>'+'</tr>');
+                    for (i in json.data[element]){
+                        $('#row'+element).append('<td>'+json.data[element][i]+'</td>');    
+                    }
+                }
+                    var trace1 = {
+                    x: data[1][0].x,
+                    y: data[1][0].y,
+                    name: 'Control',
+                    error_y: {
+                        type: 'data',
+                        array: data[1][0].error_y.array,
+                        visible: true
+                    },
+                    type: 'bar'
+                    };
+                    var data = [trace1];
+                    var layout = {barmode: 'group'};
+                    Plotly.newPlot('graph', data, layout);
+                
+                $('#tabla').DataTable({
+                    dom: 'Bfrtip',
+                    "bDestroy": true,
+                    buttons: [
+                        { extend: 'pdf', text: 'Download table in PDF', orientation: 'landscape', pageSize: 'LEGAL'},
+                        { extend: 'csv', text: 'Download table in CSV' }
+                    ]
+                });	   
+            }else{
+                $('#wait').attr('hidden', true);  
+                $('#all').attr('hidden', true);
+                $('#error_alert').fadeIn();;
+                $('#error_alert').attr('hidden', false)
+                setTimeout(function() {$('#error_alert').fadeOut();}, 3000)
+            }
+        });       
+});
+    
+function eraseText() {
+    document.getElementById("exampleFormControlTextarea1").value = "";
+    $("#exampleFormControlTextarea1").focus();
+}
+</script>
+
+

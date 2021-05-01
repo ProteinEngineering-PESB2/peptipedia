@@ -1,0 +1,246 @@
+<div class="jumbotron mt-4">
+    <h1 class="display-4">Database</h1>
+    <br>
+    <p class="lead">Our database has 92055 registered and characterized peptides, currently the peptide database with the most extensive registrations to date. According to our system of categories proposed in this work, we classify peptides, suggesting ten main categories. Each of them has subcategories or different levels of classification, according to previously reported activities.</p>
+</div>
+<div id="wait" class="text-center">
+    <h1>The database is loading, this will take a few minutes</h1>
+    <br>
+    <i class="fa-7x fas fa-cog fa-spin"></i>  
+</div>
+<div hidden id="all" class="card">
+    <h5 class="card-header">General statistics of the database</h5>
+    <div class="card-body">
+    <h5 class="card-title">Total number of records:</h5>
+    {{#each statistics}}
+    <p class="card-text">{{calculation Name 'Total number of records' Value}}</p>
+    {{/each}}
+    <h5 class="card-title">Total Uniprot codes:</h5>
+    {{#each statistics}}
+    <p class="card-text">{{calculation Name 'Total Uniprot codes' Value}}</p>
+    {{/each}}
+    <h5 class="card-title">Total number of organism:</h5>
+    {{#each statistics}}
+    <p class="card-text">{{calculation Name 'Total number of organism' Value}}</p>
+    {{/each}}
+  </div>
+
+    <h5 class="card-header">Pie Chart of the number of sequences per activity</h5>
+    <div class="card-body">
+        <div class="col-lg-12" id="pie1"></div>
+    </div>
+    <h5 class="card-header">Histogram of the lenght of total sequences</h5>
+    <div class="card-body text-center">
+        <div class="col-lg-12" id="hist1"></div>
+    </div>
+    <h5 class="card-header">Database</h5>
+    <div class="card-body">
+        <a id="dl_csv" target="_blank" class="btn btn-secondary btn-lg">Download in CSV</a>
+        <a id="dl_json" target="_blank" class="btn btn-secondary btn-lg">Download in JSON</a>
+        <a id="dl_fasta" target="_blank" class="btn btn-secondary btn-lg">Download in FASTA</a>
+        <br>
+        <br>
+        <table id="example" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>View more</th>
+                        <th>ID Sequence</th>
+                        <th>Sequence</th>
+                        <th>Length</th>
+                        <th>Peptide name</th>
+                        <th>Isoelectric</th>
+                        <th>Molecular weight</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>View more</th>
+                        <th>ID Sequence</th>
+                        <th>Sequence</th>
+                        <th>Length</th>
+                        <th>Peptide name</th>
+                        <th>Isoelectric</th>
+                        <th>Molecular weight</th>
+                    </tr>
+                </tfoot>
+            </table>  
+    </div>
+    <h5 class="card-header">Average property values ​​for each activity</h5>
+    <div class="card-body">
+        <table class="table-responsive table-striped px-3 py-3">
+            <thead>
+                <tr>
+                <th class="px-2 py-2" scope="col">Property</th>    
+                {{#each statistics}}
+                <th class="px-2 py-2" scope="col">{{matrix Name Name}}</th>                
+                {{/each}}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th class="px-2 py-2" scope="row">Molecular Weight</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 0}}</td>
+                {{/each}}
+                </tr>
+                <tr>
+                <th class="px-2 py-2" scope="row">Charge</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 1}}</td>
+                {{/each}}
+                </tr>
+                <tr>
+                <th class="px-2 py-2" scope="row">Charge Density</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 2}}</td>
+                {{/each}}
+                </tr>
+                <tr>
+                <th class="px-2 py-2" scope="row">Isoelectric</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 3}}</td>
+                {{/each}}
+                </tr>
+                <tr>
+                <th class="px-2 py-2" scope="row">Inestability</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 4}}</td>
+                {{/each}}
+                </tr>
+                <tr>
+                <th class="px-2 py-2" scope="row">Aromaticity</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 5}}</td>
+                {{/each}}
+                </tr>
+                <tr>
+                <th class="px-2 py-2" scope="row">Aliphatic Index</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 6}}</td>
+                {{/each}}
+                </tr>
+                <tr>
+                <th class="px-2 py-2" scope="row">Hydrophobic Ratio</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 7}}</td>
+                {{/each}}
+                </tr>
+                <tr>
+                <th class="px-2 py-2" scope="row">Hydrophobicity Profile</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 8}}</td>
+                {{/each}}
+                </tr>
+                <tr>
+                <th class="px-2 py-2" scope="row">Hydrophobic Profile</th>
+                {{#each statistics}}
+                <td class="px-2 py-2">{{calculation_matrix Name Mean 9}}</td>
+                {{/each}}
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h5 class="card-header">Activities</h5>
+    <div class="card-body">
+        <div class="row mb-2">
+        {{#each activities}}
+        <div class="card col-3">
+                <div class="card-body">
+                    <h5 class="card-title activity_names">{{matrix Name Name}}</h5>
+                    <p class="card-text">{{matrix Name Description}}</p>
+                    <a id="{{matrix Name Name}}" class="btn btn-primary" onclick="myFunction(this)" >See details</a>
+                </div>
+            </div>
+        {{/each}}
+        </div>
+    </div>
+</div>
+<script>
+  function myFunction(elem) {
+        //location.href = 'details?activity='+elem.id;
+        if(elem.id == 'Drug delivery vehicle'){
+            elem.id = 'Drugdeliveryvehicle'
+        }
+        if(elem.id == 'Other activity'){
+            elem.id = 'Otheractivity'
+        }
+        if(elem.id == 'Neurological activity'){
+            elem.id = 'Neurologicalactivity'
+        }
+        if(elem.id == 'Immunological activity'){
+            elem.id = 'Immunologicalactivity'
+        }
+        location.href = 'details/'+elem.id;
+    } 
+  var strings = ("{{#each statistics}}{{calculation Name 'PieChart1' Labels}}{{/each}}");
+  var array = strings.split(",");
+  var data = [{
+  values:   [{{#each statistics}}{{calculation Name 'PieChart1' Value}}{{/each}}],
+  labels: array,
+  type: 'pie'
+}];
+
+Plotly.newPlot('pie1', data);
+
+
+var trace = {
+    x: [{{#each statistics}}{{calculation Name 'Histogram1' Value}}{{/each}}],
+    type: 'histogram',
+  };
+  var layout = {
+  xaxis: {title: "Value"}, 
+  yaxis: {title: "Frequency"}
+};
+var data = [trace];
+Plotly.newPlot('hist1', data, layout);
+
+
+$.ajax({
+    //'url': "http://localhost/api/database",
+    'url': "http://peptipedia.cl/api/database",
+    'method': "GET",
+    'contentType': 'application/json'
+}).done( function(data) {
+    var example = $('#example').DataTable( {
+        "scrollX": true,
+        "aaData": data,
+        "deferRender": true,
+        "columns": [
+            { "defaultContent": "<button id='b_results' type='button' class='btn btn-success'><i class='fa fa-file'></i></button>"},
+            { "data": "id_sequence" },
+            { "data": "sequence" },
+            { "data": "length" },
+            { "data": "peptide_name" },
+            { "data": "isoelectric_point" },
+            { "data": "molecular_weigth" },
+        ]
+    })    
+    
+    var dlAnchorElem = document.getElementById('dl_csv');
+    dlAnchorElem.setAttribute("href", '/attachment/database/database.csv');
+    dlAnchorElem.setAttribute("download", "database.csv");
+    
+    var dlAnchorElem = document.getElementById('dl_json');
+    dlAnchorElem.setAttribute("href", '/attachment/database/database.json');
+    dlAnchorElem.setAttribute("download", "database.json");
+
+    var dlAnchorElem = document.getElementById('dl_fasta');
+    dlAnchorElem.setAttribute("href", '/attachment/database/database.fasta');
+    dlAnchorElem.setAttribute("download", "database.fasta");
+
+    $('#wait').attr('hidden', true);
+    $('#all').attr('hidden', false);  
+    $('#example').DataTable().columns.adjust();
+    getSecForDetail("#example tbody", example);
+});
+var getSecForDetail = function(tbody, table){
+    $(tbody).on("click", "#b_results", function(){
+		var data = table.row( $(this).parents("tr") ).data();		
+        if (data != undefined){
+            window.open("../sequence?id_sec="+data.id_sequence, "_blank");
+            //location.href="../sequence?sec="+data.sequence;
+        }
+	});
+}
+</script>
+

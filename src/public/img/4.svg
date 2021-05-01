@@ -1,0 +1,2608 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   class="main-svg"
+   width="700"
+   height="500"
+   style=""
+   viewBox="0 0 700 500"
+   version="1.1"
+   id="svg1177"
+   sodipodi:docname="frequency_data_mean.svg"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
+  <metadata
+     id="metadata1181">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="718"
+     id="namedview1179"
+     showgrid="false"
+     inkscape:zoom="1.106"
+     inkscape:cx="350"
+     inkscape:cy="250"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1177" />
+  <rect
+     x="0"
+     y="0"
+     width="700"
+     height="500"
+     style="fill: rgb(255, 255, 255); fill-opacity: 1;"
+     id="rect2" />
+  <defs
+     id="defs-afc366">
+    <g
+       class="clips"
+       id="g16">
+      <clipPath
+         id="clipafc366xyplot"
+         class="plotclip">
+        <rect
+           width="436"
+           height="320"
+           id="rect4" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clipafc366x">
+        <rect
+           x="80"
+           y="0"
+           width="436"
+           height="500"
+           id="rect7" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clipafc366y">
+        <rect
+           x="0"
+           y="100"
+           width="700"
+           height="320"
+           id="rect10" />
+      </clipPath>
+      <clipPath
+         class="axesclip"
+         id="clipafc366xy">
+        <rect
+           x="80"
+           y="100"
+           width="436"
+           height="320"
+           id="rect13" />
+      </clipPath>
+    </g>
+    <g
+       class="gradients"
+       id="g18" />
+  </defs>
+  <g
+     class="layer-below"
+     id="g29">
+    <g
+       class="imagelayer"
+       id="g25" />
+    <g
+       class="shapelayer"
+       id="g27" />
+  </g>
+  <g
+     class="cartesianlayer"
+     id="g967">
+    <g
+       class="subplot xy"
+       id="g965">
+      <g
+         class="layer-subplot"
+         id="g35">
+        <g
+           class="shapelayer"
+           id="g31" />
+        <g
+           class="imagelayer"
+           id="g33" />
+      </g>
+      <g
+         class="gridlayer"
+         id="g57">
+        <g
+           class="x"
+           id="g37" />
+        <g
+           class="y"
+           id="g55">
+          <path
+             class="ygrid crisp"
+             transform="translate(0,383.78)"
+             d="M80,0h436"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path39" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,347.56)"
+             d="M80,0h436"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path41" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,311.34000000000003)"
+             d="M80,0h436"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path43" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,275.13)"
+             d="M80,0h436"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path45" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,238.91)"
+             d="M80,0h436"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path47" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,202.69)"
+             d="M80,0h436"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path49" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,166.47)"
+             d="M80,0h436"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path51" />
+          <path
+             class="ygrid crisp"
+             transform="translate(0,130.25)"
+             d="M80,0h436"
+             style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 1px;"
+             id="path53" />
+        </g>
+      </g>
+      <g
+         class="zerolinelayer"
+         id="g61">
+        <path
+           class="yzl zl crisp"
+           transform="translate(0,420)"
+           d="M80,0h436"
+           style="stroke: rgb(255, 255, 255); stroke-opacity: 1; stroke-width: 2px;"
+           id="path59" />
+      </g>
+      <path
+         class="xlines-below"
+         id="path63" />
+      <path
+         class="ylines-below"
+         id="path65" />
+      <g
+         class="overlines-below"
+         id="g67" />
+      <g
+         class="xaxislayer-below"
+         id="g69" />
+      <g
+         class="yaxislayer-below"
+         id="g71" />
+      <g
+         class="overaxes-below"
+         id="g73" />
+      <g
+         class="plot"
+         transform="translate(80, 100)"
+         clip-path="url('#clipafc366xyplot')"
+         id="g833">
+        <g
+           class="barlayer mlayer"
+           id="g831">
+          <g
+             class="trace bars"
+             style="opacity: 1;"
+             id="g157">
+            <g
+               class="points"
+               id="g155">
+              <g
+                 class="point"
+                 id="g77">
+                <path
+                   d="M2.18,320V156.93H4.12V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path75" />
+              </g>
+              <g
+                 class="point"
+                 id="g81">
+                <path
+                   d="M23.98,320V239.43H25.92V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path79" />
+              </g>
+              <g
+                 class="point"
+                 id="g85">
+                <path
+                   d="M45.78,320V252.8H47.72V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path83" />
+              </g>
+              <g
+                 class="point"
+                 id="g89">
+                <path
+                   d="M67.58,320V245.43H69.52V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path87" />
+              </g>
+              <g
+                 class="point"
+                 id="g93">
+                <path
+                   d="M89.38,320V230.12H91.32V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path91" />
+              </g>
+              <g
+                 class="point"
+                 id="g97">
+                <path
+                   d="M111.18,320V269.38H113.12V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path95" />
+              </g>
+              <g
+                 class="point"
+                 id="g101">
+                <path
+                   d="M132.98,320V236.82H134.92V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path99" />
+              </g>
+              <g
+                 class="point"
+                 id="g105">
+                <path
+                   d="M154.78,320V234.6H156.72V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path103" />
+              </g>
+              <g
+                 class="point"
+                 id="g109">
+                <path
+                   d="M176.58,320V295.77H178.52V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path107" />
+              </g>
+              <g
+                 class="point"
+                 id="g113">
+                <path
+                   d="M198.38,320V217.65H200.32V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path111" />
+              </g>
+              <g
+                 class="point"
+                 id="g117">
+                <path
+                   d="M220.18,320V105.44H222.12V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path115" />
+              </g>
+              <g
+                 class="point"
+                 id="g121">
+                <path
+                   d="M241.98,320V233.82H243.92V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path119" />
+              </g>
+              <g
+                 class="point"
+                 id="g125">
+                <path
+                   d="M263.78,320V261.63H265.72V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path123" />
+              </g>
+              <g
+                 class="point"
+                 id="g129">
+                <path
+                   d="M285.58,320V184.8H287.52V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path127" />
+              </g>
+              <g
+                 class="point"
+                 id="g133">
+                <path
+                   d="M307.38,320V216.54H309.32V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path131" />
+              </g>
+              <g
+                 class="point"
+                 id="g137">
+                <path
+                   d="M329.18,320V195.06H331.12V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path135" />
+              </g>
+              <g
+                 class="point"
+                 id="g141">
+                <path
+                   d="M350.98,320V250.88H352.92V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path139" />
+              </g>
+              <g
+                 class="point"
+                 id="g145">
+                <path
+                   d="M372.78,320V295.26H374.72V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path143" />
+              </g>
+              <g
+                 class="point"
+                 id="g149">
+                <path
+                   d="M394.58,320V275.94H396.52V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path147" />
+              </g>
+              <g
+                 class="point"
+                 id="g153">
+                <path
+                   d="M416.38,320V190.77H418.32V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path151" />
+              </g>
+            </g>
+          </g>
+          <g
+             class="trace bars"
+             style="opacity: 1;"
+             id="g241">
+            <g
+               class="points"
+               id="g239">
+              <g
+                 class="point"
+                 id="g161">
+                <path
+                   d="M4.12,320V158.47H6.06V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path159" />
+              </g>
+              <g
+                 class="point"
+                 id="g165">
+                <path
+                   d="M25.92,320V233.44H27.86V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path163" />
+              </g>
+              <g
+                 class="point"
+                 id="g169">
+                <path
+                   d="M47.72,320V258.7H49.66V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path167" />
+              </g>
+              <g
+                 class="point"
+                 id="g173">
+                <path
+                   d="M69.52,320V251.38H71.46V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path171" />
+              </g>
+              <g
+                 class="point"
+                 id="g177">
+                <path
+                   d="M91.32,320V220.2H93.26V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path175" />
+              </g>
+              <g
+                 class="point"
+                 id="g181">
+                <path
+                   d="M113.12,320V263.72H115.06V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path179" />
+              </g>
+              <g
+                 class="point"
+                 id="g185">
+                <path
+                   d="M134.92,320V239.27H136.86V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path183" />
+              </g>
+              <g
+                 class="point"
+                 id="g189">
+                <path
+                   d="M156.72,320V201.58H158.66V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path187" />
+              </g>
+              <g
+                 class="point"
+                 id="g193">
+                <path
+                   d="M178.52,320V288.8H180.46V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path191" />
+              </g>
+              <g
+                 class="point"
+                 id="g197">
+                <path
+                   d="M200.32,320V238.67H202.26V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path195" />
+              </g>
+              <g
+                 class="point"
+                 id="g201">
+                <path
+                   d="M222.12,320V96.31H224.06V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path199" />
+              </g>
+              <g
+                 class="point"
+                 id="g205">
+                <path
+                   d="M243.92,320V217.41H245.86V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path203" />
+              </g>
+              <g
+                 class="point"
+                 id="g209">
+                <path
+                   d="M265.72,320V254.08H267.66V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path207" />
+              </g>
+              <g
+                 class="point"
+                 id="g213">
+                <path
+                   d="M287.52,320V244.67H289.46V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path211" />
+              </g>
+              <g
+                 class="point"
+                 id="g217">
+                <path
+                   d="M309.32,320V239.85H311.26V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path215" />
+              </g>
+              <g
+                 class="point"
+                 id="g221">
+                <path
+                   d="M331.12,320V189.69H333.06V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path219" />
+              </g>
+              <g
+                 class="point"
+                 id="g225">
+                <path
+                   d="M352.92,320V220.42H354.86V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path223" />
+              </g>
+              <g
+                 class="point"
+                 id="g229">
+                <path
+                   d="M374.72,320V297H376.66V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path227" />
+              </g>
+              <g
+                 class="point"
+                 id="g233">
+                <path
+                   d="M396.52,320V275.23H398.46V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path231" />
+              </g>
+              <g
+                 class="point"
+                 id="g237">
+                <path
+                   d="M418.32,320V200.23H420.26V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path235" />
+              </g>
+            </g>
+          </g>
+          <g
+             class="trace bars"
+             style="opacity: 1;"
+             id="g325">
+            <g
+               class="points"
+               id="g323">
+              <g
+                 class="point"
+                 id="g245">
+                <path
+                   d="M6.06,320V160.13H7.99V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path243" />
+              </g>
+              <g
+                 class="point"
+                 id="g249">
+                <path
+                   d="M27.86,320V185.92H29.79V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path247" />
+              </g>
+              <g
+                 class="point"
+                 id="g253">
+                <path
+                   d="M49.66,320V257.72H51.59V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path251" />
+              </g>
+              <g
+                 class="point"
+                 id="g257">
+                <path
+                   d="M71.46,320V246.39H73.39V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path255" />
+              </g>
+              <g
+                 class="point"
+                 id="g261">
+                <path
+                   d="M93.26,320V291.95H95.19V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path259" />
+              </g>
+              <g
+                 class="point"
+                 id="g265">
+                <path
+                   d="M115.06,320V247.35H116.99V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path263" />
+              </g>
+              <g
+                 class="point"
+                 id="g269">
+                <path
+                   d="M136.86,320V211.58H138.79V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path267" />
+              </g>
+              <g
+                 class="point"
+                 id="g273">
+                <path
+                   d="M158.66,320V201.35H160.59V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path271" />
+              </g>
+              <g
+                 class="point"
+                 id="g277">
+                <path
+                   d="M180.46,320V280.68H182.39V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path275" />
+              </g>
+              <g
+                 class="point"
+                 id="g281">
+                <path
+                   d="M202.26,320V243.23H204.19V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path279" />
+              </g>
+              <g
+                 class="point"
+                 id="g285">
+                <path
+                   d="M224.06,320V150.21H225.99V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path283" />
+              </g>
+              <g
+                 class="point"
+                 id="g289">
+                <path
+                   d="M245.86,320V189.14H247.79V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path287" />
+              </g>
+              <g
+                 class="point"
+                 id="g293">
+                <path
+                   d="M267.66,320V272.81H269.59V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path291" />
+              </g>
+              <g
+                 class="point"
+                 id="g297">
+                <path
+                   d="M289.46,320V246.06H291.39V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path295" />
+              </g>
+              <g
+                 class="point"
+                 id="g301">
+                <path
+                   d="M311.26,320V224.75H313.19V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path299" />
+              </g>
+              <g
+                 class="point"
+                 id="g305">
+                <path
+                   d="M333.06,320V181.07H334.99V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path303" />
+              </g>
+              <g
+                 class="point"
+                 id="g309">
+                <path
+                   d="M354.86,320V223.7H356.79V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path307" />
+              </g>
+              <g
+                 class="point"
+                 id="g313">
+                <path
+                   d="M376.66,320V299.79H378.59V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path311" />
+              </g>
+              <g
+                 class="point"
+                 id="g317">
+                <path
+                   d="M398.46,320V273.8H400.39V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path315" />
+              </g>
+              <g
+                 class="point"
+                 id="g321">
+                <path
+                   d="M420.26,320V201.44H422.19V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path319" />
+              </g>
+            </g>
+          </g>
+          <g
+             class="trace bars"
+             style="opacity: 1;"
+             id="g409">
+            <g
+               class="points"
+               id="g407">
+              <g
+                 class="point"
+                 id="g329">
+                <path
+                   d="M7.99,320V202.36H9.93V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path327" />
+              </g>
+              <g
+                 class="point"
+                 id="g333">
+                <path
+                   d="M29.79,320V221.32H31.73V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path331" />
+              </g>
+              <g
+                 class="point"
+                 id="g337">
+                <path
+                   d="M51.59,320V254.14H53.53V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path335" />
+              </g>
+              <g
+                 class="point"
+                 id="g341">
+                <path
+                   d="M73.39,320V249.05H75.33V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path339" />
+              </g>
+              <g
+                 class="point"
+                 id="g345">
+                <path
+                   d="M95.19,320V272.7H97.13V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path343" />
+              </g>
+              <g
+                 class="point"
+                 id="g349">
+                <path
+                   d="M116.99,320V241.79H118.93V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path347" />
+              </g>
+              <g
+                 class="point"
+                 id="g353">
+                <path
+                   d="M138.79,320V240.34H140.73V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path351" />
+              </g>
+              <g
+                 class="point"
+                 id="g357">
+                <path
+                   d="M160.59,320V158.7H162.53V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path355" />
+              </g>
+              <g
+                 class="point"
+                 id="g361">
+                <path
+                   d="M182.39,320V270.11H184.33V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path359" />
+              </g>
+              <g
+                 class="point"
+                 id="g365">
+                <path
+                   d="M204.19,320V238.27H206.13V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path363" />
+              </g>
+              <g
+                 class="point"
+                 id="g369">
+                <path
+                   d="M225.99,320V167.66H227.93V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path367" />
+              </g>
+              <g
+                 class="point"
+                 id="g373">
+                <path
+                   d="M247.79,320V217.19H249.73V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path371" />
+              </g>
+              <g
+                 class="point"
+                 id="g377">
+                <path
+                   d="M269.59,320V280.85H271.53V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path375" />
+              </g>
+              <g
+                 class="point"
+                 id="g381">
+                <path
+                   d="M291.39,320V214.22H293.33V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path379" />
+              </g>
+              <g
+                 class="point"
+                 id="g385">
+                <path
+                   d="M313.19,320V155.97H315.13V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path383" />
+              </g>
+              <g
+                 class="point"
+                 id="g389">
+                <path
+                   d="M334.99,320V219.84H336.93V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path387" />
+              </g>
+              <g
+                 class="point"
+                 id="g393">
+                <path
+                   d="M356.79,320V256.62H358.73V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path391" />
+              </g>
+              <g
+                 class="point"
+                 id="g397">
+                <path
+                   d="M378.59,320V273.31H380.53V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path395" />
+              </g>
+              <g
+                 class="point"
+                 id="g401">
+                <path
+                   d="M400.39,320V235.68H402.33V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path399" />
+              </g>
+              <g
+                 class="point"
+                 id="g405">
+                <path
+                   d="M422.19,320V218.95H424.13V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path403" />
+              </g>
+            </g>
+          </g>
+          <g
+             class="trace bars"
+             style="opacity: 1;"
+             id="g493">
+            <g
+               class="points"
+               id="g491">
+              <g
+                 class="point"
+                 id="g413">
+                <path
+                   d="M9.93,320V201.09H11.87V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path411" />
+              </g>
+              <g
+                 class="point"
+                 id="g417">
+                <path
+                   d="M31.73,320V16H33.67V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path415" />
+              </g>
+              <g
+                 class="point"
+                 id="g421">
+                <path
+                   d="M53.53,320V273.44H55.47V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path419" />
+              </g>
+              <g
+                 class="point"
+                 id="g425">
+                <path
+                   d="M75.33,320V274.31H77.27V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path423" />
+              </g>
+              <g
+                 class="point"
+                 id="g429">
+                <path
+                   d="M97.13,320V223.42H99.07V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path427" />
+              </g>
+              <g
+                 class="point"
+                 id="g433">
+                <path
+                   d="M118.93,320V262.23H120.87V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path431" />
+              </g>
+              <g
+                 class="point"
+                 id="g437">
+                <path
+                   d="M140.73,320V267.92H142.67V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path435" />
+              </g>
+              <g
+                 class="point"
+                 id="g441">
+                <path
+                   d="M162.53,320V203.38H164.47V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path439" />
+              </g>
+              <g
+                 class="point"
+                 id="g445">
+                <path
+                   d="M184.33,320V264.55H186.27V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path443" />
+              </g>
+              <g
+                 class="point"
+                 id="g449">
+                <path
+                   d="M206.13,320V254.43H208.07V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path447" />
+              </g>
+              <g
+                 class="point"
+                 id="g453">
+                <path
+                   d="M227.93,320V160.08H229.87V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path451" />
+              </g>
+              <g
+                 class="point"
+                 id="g457">
+                <path
+                   d="M249.73,320V157.36H251.67V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path455" />
+              </g>
+              <g
+                 class="point"
+                 id="g461">
+                <path
+                   d="M271.53,320V286.1H273.47V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path459" />
+              </g>
+              <g
+                 class="point"
+                 id="g465">
+                <path
+                   d="M293.33,320V261.83H295.27V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path463" />
+              </g>
+              <g
+                 class="point"
+                 id="g469">
+                <path
+                   d="M315.13,320V212.65H317.07V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path467" />
+              </g>
+              <g
+                 class="point"
+                 id="g473">
+                <path
+                   d="M336.93,320V220.78H338.87V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path471" />
+              </g>
+              <g
+                 class="point"
+                 id="g477">
+                <path
+                   d="M358.73,320V260.22H360.67V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path475" />
+              </g>
+              <g
+                 class="point"
+                 id="g481">
+                <path
+                   d="M380.53,320V261.91H382.47V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path479" />
+              </g>
+              <g
+                 class="point"
+                 id="g485">
+                <path
+                   d="M402.33,320V265.6H404.27V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path483" />
+              </g>
+              <g
+                 class="point"
+                 id="g489">
+                <path
+                   d="M424.13,320V261.76H426.07V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path487" />
+              </g>
+            </g>
+          </g>
+          <g
+             class="trace bars"
+             style="opacity: 1;"
+             id="g577">
+            <g
+               class="points"
+               id="g575">
+              <g
+                 class="point"
+                 id="g497">
+                <path
+                   d="M11.87,320V196.15H13.81V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path495" />
+              </g>
+              <g
+                 class="point"
+                 id="g501">
+                <path
+                   d="M33.67,320V182.57H35.61V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path499" />
+              </g>
+              <g
+                 class="point"
+                 id="g505">
+                <path
+                   d="M55.47,320V262.05H57.41V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path503" />
+              </g>
+              <g
+                 class="point"
+                 id="g509">
+                <path
+                   d="M77.27,320V265.49H79.21V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path507" />
+              </g>
+              <g
+                 class="point"
+                 id="g513">
+                <path
+                   d="M99.07,320V215.27H101.01V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path511" />
+              </g>
+              <g
+                 class="point"
+                 id="g517">
+                <path
+                   d="M120.87,320V270.78H122.81V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path515" />
+              </g>
+              <g
+                 class="point"
+                 id="g521">
+                <path
+                   d="M142.67,320V255.21H144.61V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path519" />
+              </g>
+              <g
+                 class="point"
+                 id="g525">
+                <path
+                   d="M164.47,320V175.11H166.41V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path523" />
+              </g>
+              <g
+                 class="point"
+                 id="g529">
+                <path
+                   d="M186.27,320V280.65H188.21V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path527" />
+              </g>
+              <g
+                 class="point"
+                 id="g533">
+                <path
+                   d="M208.07,320V222.7H210.01V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path531" />
+              </g>
+              <g
+                 class="point"
+                 id="g537">
+                <path
+                   d="M229.87,320V144.16H231.81V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path535" />
+              </g>
+              <g
+                 class="point"
+                 id="g541">
+                <path
+                   d="M251.67,320V144.5H253.61V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path539" />
+              </g>
+              <g
+                 class="point"
+                 id="g545">
+                <path
+                   d="M273.47,320V291.57H275.41V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path543" />
+              </g>
+              <g
+                 class="point"
+                 id="g549">
+                <path
+                   d="M295.27,320V236.68H297.21V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path547" />
+              </g>
+              <g
+                 class="point"
+                 id="g553">
+                <path
+                   d="M317.07,320V211.42H319.01V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path551" />
+              </g>
+              <g
+                 class="point"
+                 id="g557">
+                <path
+                   d="M338.87,320V223.53H340.81V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path555" />
+              </g>
+              <g
+                 class="point"
+                 id="g561">
+                <path
+                   d="M360.67,320V253.61H362.61V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path559" />
+              </g>
+              <g
+                 class="point"
+                 id="g565">
+                <path
+                   d="M382.47,320V266.11H384.41V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path563" />
+              </g>
+              <g
+                 class="point"
+                 id="g569">
+                <path
+                   d="M404.27,320V269.04H406.21V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path567" />
+              </g>
+              <g
+                 class="point"
+                 id="g573">
+                <path
+                   d="M426.07,320V222.46H428.01V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path571" />
+              </g>
+            </g>
+          </g>
+          <g
+             class="trace bars"
+             style="opacity: 1;"
+             id="g661">
+            <g
+               class="points"
+               id="g659">
+              <g
+                 class="point"
+                 id="g581">
+                <path
+                   d="M13.81,320V188.29H15.74V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path579" />
+              </g>
+              <g
+                 class="point"
+                 id="g585">
+                <path
+                   d="M35.61,320V249.94H37.54V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path583" />
+              </g>
+              <g
+                 class="point"
+                 id="g589">
+                <path
+                   d="M57.41,320V264.48H59.34V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path587" />
+              </g>
+              <g
+                 class="point"
+                 id="g593">
+                <path
+                   d="M79.21,320V270.83H81.14V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path591" />
+              </g>
+              <g
+                 class="point"
+                 id="g597">
+                <path
+                   d="M101.01,320V214.5H102.94V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path595" />
+              </g>
+              <g
+                 class="point"
+                 id="g601">
+                <path
+                   d="M122.81,320V292.8H124.74V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path599" />
+              </g>
+              <g
+                 class="point"
+                 id="g605">
+                <path
+                   d="M144.61,320V285.21H146.54V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path603" />
+              </g>
+              <g
+                 class="point"
+                 id="g609">
+                <path
+                   d="M166.41,320V124.95H168.34V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path607" />
+              </g>
+              <g
+                 class="point"
+                 id="g613">
+                <path
+                   d="M188.21,320V290.5H190.14V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path611" />
+              </g>
+              <g
+                 class="point"
+                 id="g617">
+                <path
+                   d="M210.01,320V168.08H211.94V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path615" />
+              </g>
+              <g
+                 class="point"
+                 id="g621">
+                <path
+                   d="M231.81,320V100.99H233.74V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path619" />
+              </g>
+              <g
+                 class="point"
+                 id="g625">
+                <path
+                   d="M253.61,320V116.87H255.54V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path623" />
+              </g>
+              <g
+                 class="point"
+                 id="g629">
+                <path
+                   d="M275.41,320V304.28H277.34V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path627" />
+              </g>
+              <g
+                 class="point"
+                 id="g633">
+                <path
+                   d="M297.21,320V225.54H299.14V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path631" />
+              </g>
+              <g
+                 class="point"
+                 id="g637">
+                <path
+                   d="M319.01,320V247.29H320.94V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path635" />
+              </g>
+              <g
+                 class="point"
+                 id="g641">
+                <path
+                   d="M340.81,320V201.24H342.74V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path639" />
+              </g>
+              <g
+                 class="point"
+                 id="g645">
+                <path
+                   d="M362.61,320V254.7H364.54V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path643" />
+              </g>
+              <g
+                 class="point"
+                 id="g649">
+                <path
+                   d="M384.41,320V290.34H386.34V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path647" />
+              </g>
+              <g
+                 class="point"
+                 id="g653">
+                <path
+                   d="M406.21,320V297.62H408.14V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path651" />
+              </g>
+              <g
+                 class="point"
+                 id="g657">
+                <path
+                   d="M428.01,320V200.66H429.94V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path655" />
+              </g>
+            </g>
+          </g>
+          <g
+             class="trace bars"
+             style="opacity: 1;"
+             id="g745">
+            <g
+               class="points"
+               id="g743">
+              <g
+                 class="point"
+                 id="g665">
+                <path
+                   d="M15.74,320V206.6H17.68V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path663" />
+              </g>
+              <g
+                 class="point"
+                 id="g669">
+                <path
+                   d="M37.54,320V187.31H39.48V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path667" />
+              </g>
+              <g
+                 class="point"
+                 id="g673">
+                <path
+                   d="M59.34,320V255.28H61.28V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path671" />
+              </g>
+              <g
+                 class="point"
+                 id="g677">
+                <path
+                   d="M81.14,320V227.21H83.08V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path675" />
+              </g>
+              <g
+                 class="point"
+                 id="g681">
+                <path
+                   d="M102.94,320V276.12H104.88V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path679" />
+              </g>
+              <g
+                 class="point"
+                 id="g685">
+                <path
+                   d="M124.74,320V239.32H126.68V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path683" />
+              </g>
+              <g
+                 class="point"
+                 id="g689">
+                <path
+                   d="M146.54,320V200.53H148.48V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path687" />
+              </g>
+              <g
+                 class="point"
+                 id="g693">
+                <path
+                   d="M168.34,320V163.63H170.28V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path691" />
+              </g>
+              <g
+                 class="point"
+                 id="g697">
+                <path
+                   d="M190.14,320V271.39H192.08V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path695" />
+              </g>
+              <g
+                 class="point"
+                 id="g701">
+                <path
+                   d="M211.94,320V265.49H213.88V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path699" />
+              </g>
+              <g
+                 class="point"
+                 id="g705">
+                <path
+                   d="M233.74,320V173.22H235.68V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path703" />
+              </g>
+              <g
+                 class="point"
+                 id="g709">
+                <path
+                   d="M255.54,320V217.66H257.48V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path707" />
+              </g>
+              <g
+                 class="point"
+                 id="g713">
+                <path
+                   d="M277.34,320V274.84H279.28V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path711" />
+              </g>
+              <g
+                 class="point"
+                 id="g717">
+                <path
+                   d="M299.14,320V229.35H301.08V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path715" />
+              </g>
+              <g
+                 class="point"
+                 id="g721">
+                <path
+                   d="M320.94,320V207.36H322.88V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path719" />
+              </g>
+              <g
+                 class="point"
+                 id="g725">
+                <path
+                   d="M342.74,320V166.38H344.68V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path723" />
+              </g>
+              <g
+                 class="point"
+                 id="g729">
+                <path
+                   d="M364.54,320V250.59H366.48V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path727" />
+              </g>
+              <g
+                 class="point"
+                 id="g733">
+                <path
+                   d="M386.34,320V286.5H388.28V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path731" />
+              </g>
+              <g
+                 class="point"
+                 id="g737">
+                <path
+                   d="M408.14,320V243.34H410.08V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path735" />
+              </g>
+              <g
+                 class="point"
+                 id="g741">
+                <path
+                   d="M429.94,320V246.93H431.88V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path739" />
+              </g>
+            </g>
+          </g>
+          <g
+             class="trace bars"
+             style="opacity: 1;"
+             id="g829">
+            <g
+               class="points"
+               id="g827">
+              <g
+                 class="point"
+                 id="g749">
+                <path
+                   d="M17.68,320V163.9H19.62V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path747" />
+              </g>
+              <g
+                 class="point"
+                 id="g753">
+                <path
+                   d="M39.48,320V198.05H41.42V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path751" />
+              </g>
+              <g
+                 class="point"
+                 id="g757">
+                <path
+                   d="M61.28,320V265.13H63.22V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path755" />
+              </g>
+              <g
+                 class="point"
+                 id="g761">
+                <path
+                   d="M83.08,320V237.6H85.02V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path759" />
+              </g>
+              <g
+                 class="point"
+                 id="g765">
+                <path
+                   d="M104.88,320V250.68H106.82V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path763" />
+              </g>
+              <g
+                 class="point"
+                 id="g769">
+                <path
+                   d="M126.68,320V260.53H128.62V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path767" />
+              </g>
+              <g
+                 class="point"
+                 id="g773">
+                <path
+                   d="M148.48,320V233.6H150.42V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path771" />
+              </g>
+              <g
+                 class="point"
+                 id="g777">
+                <path
+                   d="M170.28,320V175.87H172.22V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path775" />
+              </g>
+              <g
+                 class="point"
+                 id="g781">
+                <path
+                   d="M192.08,320V281.08H194.02V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path779" />
+              </g>
+              <g
+                 class="point"
+                 id="g785">
+                <path
+                   d="M213.88,320V194.52H215.82V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path783" />
+              </g>
+              <g
+                 class="point"
+                 id="g789">
+                <path
+                   d="M235.68,320V184.9H237.62V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path787" />
+              </g>
+              <g
+                 class="point"
+                 id="g793">
+                <path
+                   d="M257.48,320V187.95H259.42V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path791" />
+              </g>
+              <g
+                 class="point"
+                 id="g797">
+                <path
+                   d="M279.28,320V281.99H281.22V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path795" />
+              </g>
+              <g
+                 class="point"
+                 id="g801">
+                <path
+                   d="M301.08,320V251.67H303.02V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path799" />
+              </g>
+              <g
+                 class="point"
+                 id="g805">
+                <path
+                   d="M322.88,320V208.88H324.82V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path803" />
+              </g>
+              <g
+                 class="point"
+                 id="g809">
+                <path
+                   d="M344.68,320V229.33H346.62V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path807" />
+              </g>
+              <g
+                 class="point"
+                 id="g813">
+                <path
+                   d="M366.48,320V240.88H368.42V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path811" />
+              </g>
+              <g
+                 class="point"
+                 id="g817">
+                <path
+                   d="M388.28,320V285.7H390.22V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path815" />
+              </g>
+              <g
+                 class="point"
+                 id="g821">
+                <path
+                   d="M410.08,320V278.77H412.02V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path819" />
+              </g>
+              <g
+                 class="point"
+                 id="g825">
+                <path
+                   d="M431.88,320V178.17H433.82V320Z"
+                   style="vector-effect: non-scaling-stroke; opacity: 1; stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                   id="path823" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g
+         class="overplot"
+         id="g835" />
+      <path
+         class="xlines-above crisp"
+         d="M0,0"
+         style="fill: none;"
+         id="path837" />
+      <path
+         class="ylines-above crisp"
+         d="M0,0"
+         style="fill: none;"
+         id="path839" />
+      <g
+         class="overlines-above"
+         id="g841" />
+      <g
+         class="xaxislayer-above"
+         id="g923">
+        <g
+           class="xtick"
+           id="g845">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(90.9,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text843">A</text>
+        </g>
+        <g
+           class="xtick"
+           id="g849">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(112.7,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text847">R</text>
+        </g>
+        <g
+           class="xtick"
+           id="g853">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(134.5,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text851">N</text>
+        </g>
+        <g
+           class="xtick"
+           id="g857">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(156.3,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text855">D</text>
+        </g>
+        <g
+           class="xtick"
+           id="g861">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(178.1,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text859">C</text>
+        </g>
+        <g
+           class="xtick"
+           id="g865">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(199.9,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text863">Q</text>
+        </g>
+        <g
+           class="xtick"
+           id="g869">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(221.7,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text867">E</text>
+        </g>
+        <g
+           class="xtick"
+           id="g873">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(243.5,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text871">G</text>
+        </g>
+        <g
+           class="xtick"
+           id="g877">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(265.3,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text875">H</text>
+        </g>
+        <g
+           class="xtick"
+           id="g881">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(287.1,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text879">I</text>
+        </g>
+        <g
+           class="xtick"
+           id="g885">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(308.9,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text883">L</text>
+        </g>
+        <g
+           class="xtick"
+           id="g889">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(330.7,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text887">K</text>
+        </g>
+        <g
+           class="xtick"
+           id="g893">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(352.5,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text891">M</text>
+        </g>
+        <g
+           class="xtick"
+           id="g897">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(374.3,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text895">F</text>
+        </g>
+        <g
+           class="xtick"
+           id="g901">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(396.1,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text899">P</text>
+        </g>
+        <g
+           class="xtick"
+           id="g905">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(417.9,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text903">S</text>
+        </g>
+        <g
+           class="xtick"
+           id="g909">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(439.7,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text907">T</text>
+        </g>
+        <g
+           class="xtick"
+           id="g913">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(461.5,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text911">W</text>
+        </g>
+        <g
+           class="xtick"
+           id="g917">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(483.3,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text915">Y</text>
+        </g>
+        <g
+           class="xtick"
+           id="g921">
+          <text
+             text-anchor="middle"
+             x="0"
+             y="433"
+             transform="translate(505.1,0)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text919">V</text>
+        </g>
+      </g>
+      <g
+         class="yaxislayer-above"
+         id="g961">
+        <g
+           class="ytick"
+           id="g927">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,420)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text925">0</text>
+        </g>
+        <g
+           class="ytick"
+           id="g931">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,383.78)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text929">2</text>
+        </g>
+        <g
+           class="ytick"
+           id="g935">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,347.56)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text933">4</text>
+        </g>
+        <g
+           class="ytick"
+           id="g939">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,311.34000000000003)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text937">6</text>
+        </g>
+        <g
+           class="ytick"
+           id="g943">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,275.13)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text941">8</text>
+        </g>
+        <g
+           class="ytick"
+           id="g947">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,238.91)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text945">10</text>
+        </g>
+        <g
+           class="ytick"
+           id="g951">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,202.69)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text949">12</text>
+        </g>
+        <g
+           class="ytick"
+           id="g955">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,166.47)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text953">14</text>
+        </g>
+        <g
+           class="ytick"
+           id="g959">
+          <text
+             text-anchor="end"
+             x="79"
+             y="4.199999999999999"
+             transform="translate(0,130.25)"
+             style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+             id="text957">16</text>
+        </g>
+      </g>
+      <g
+         class="overaxes-above"
+         id="g963" />
+    </g>
+  </g>
+  <g
+     class="polarlayer"
+     id="g969" />
+  <g
+     class="ternarylayer"
+     id="g971" />
+  <g
+     class="geolayer"
+     id="g973" />
+  <g
+     class="funnelarealayer"
+     id="g975" />
+  <g
+     class="pielayer"
+     id="g977" />
+  <g
+     class="treemaplayer"
+     id="g979" />
+  <g
+     class="sunburstlayer"
+     id="g981" />
+  <g
+     class="glimages"
+     id="g983" />
+  <defs
+     id="topdefs-afc366">
+    <g
+       class="clips"
+       id="g985" />
+    <clipPath
+       id="legendafc366">
+      <rect
+         width="163"
+         height="181"
+         x="0"
+         y="0"
+         id="rect987" />
+    </clipPath>
+  </defs>
+  <g
+     class="layer-above"
+     id="g995">
+    <g
+       class="imagelayer"
+       id="g991" />
+    <g
+       class="shapelayer"
+       id="g993" />
+  </g>
+  <g
+     class="infolayer"
+     id="g1175">
+    <g
+       class="legend"
+       pointer-events="all"
+       transform="translate(524.72, 100)"
+       id="g1167">
+      <rect
+         class="bg"
+         shape-rendering="crispEdges"
+         style="stroke: rgb(68, 68, 68); stroke-opacity: 1; fill: rgb(255, 255, 255); fill-opacity: 1; stroke-width: 0px;"
+         width="163"
+         height="181"
+         x="0"
+         y="0"
+         id="rect997" />
+      <g
+         class="scrollbox"
+         transform="translate(0, 0)"
+         clip-path="url('#legendafc366')"
+         id="g1163">
+        <g
+           class="groups"
+           id="g1161">
+          <g
+             class="traces"
+             transform="translate(0, 14.5)"
+             style="opacity: 1;"
+             id="g1015">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text999">Propeptide</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g1011">
+              <g
+                 class="legendfill"
+                 id="g1001" />
+              <g
+                 class="legendlines"
+                 id="g1003" />
+              <g
+                 class="legendsymbols"
+                 id="g1009">
+                <g
+                   class="legendpoints"
+                   id="g1007">
+                  <path
+                     class="legendundefined"
+                     d="M6,6H-6V-6H6Z"
+                     transform="translate(20,0)"
+                     style="stroke-width: 0.5px; fill: rgb(99, 110, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                     id="path1005" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="157.375"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect1013" />
+          </g>
+          <g
+             class="traces"
+             transform="translate(0, 33.5)"
+             style="opacity: 1;"
+             id="g1033">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text1017">Signal</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g1029">
+              <g
+                 class="legendfill"
+                 id="g1019" />
+              <g
+                 class="legendlines"
+                 id="g1021" />
+              <g
+                 class="legendsymbols"
+                 id="g1027">
+                <g
+                   class="legendpoints"
+                   id="g1025">
+                  <path
+                     class="legendundefined"
+                     d="M6,6H-6V-6H6Z"
+                     transform="translate(20,0)"
+                     style="stroke-width: 0.5px; fill: rgb(239, 85, 59); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                     id="path1023" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="157.375"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect1031" />
+          </g>
+          <g
+             class="traces"
+             transform="translate(0, 52.5)"
+             style="opacity: 1;"
+             id="g1051">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text1035">Transit</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g1047">
+              <g
+                 class="legendfill"
+                 id="g1037" />
+              <g
+                 class="legendlines"
+                 id="g1039" />
+              <g
+                 class="legendsymbols"
+                 id="g1045">
+                <g
+                   class="legendpoints"
+                   id="g1043">
+                  <path
+                     class="legendundefined"
+                     d="M6,6H-6V-6H6Z"
+                     transform="translate(20,0)"
+                     style="stroke-width: 0.5px; fill: rgb(0, 204, 150); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                     id="path1041" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="157.375"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect1049" />
+          </g>
+          <g
+             class="traces"
+             transform="translate(0, 71.5)"
+             style="opacity: 1;"
+             id="g1069">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text1053">Sensorial</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g1065">
+              <g
+                 class="legendfill"
+                 id="g1055" />
+              <g
+                 class="legendlines"
+                 id="g1057" />
+              <g
+                 class="legendsymbols"
+                 id="g1063">
+                <g
+                   class="legendpoints"
+                   id="g1061">
+                  <path
+                     class="legendundefined"
+                     d="M6,6H-6V-6H6Z"
+                     transform="translate(20,0)"
+                     style="stroke-width: 0.5px; fill: rgb(171, 99, 250); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                     id="path1059" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="157.375"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect1067" />
+          </g>
+          <g
+             class="traces"
+             transform="translate(0, 90.5)"
+             style="opacity: 1;"
+             id="g1087">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text1071">Drug delivery vehicle</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g1083">
+              <g
+                 class="legendfill"
+                 id="g1073" />
+              <g
+                 class="legendlines"
+                 id="g1075" />
+              <g
+                 class="legendsymbols"
+                 id="g1081">
+                <g
+                   class="legendpoints"
+                   id="g1079">
+                  <path
+                     class="legendundefined"
+                     d="M6,6H-6V-6H6Z"
+                     transform="translate(20,0)"
+                     style="stroke-width: 0.5px; fill: rgb(255, 161, 90); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                     id="path1077" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="157.375"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect1085" />
+          </g>
+          <g
+             class="traces"
+             transform="translate(0, 109.5)"
+             style="opacity: 1;"
+             id="g1105">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text1089">Therapeutic</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g1101">
+              <g
+                 class="legendfill"
+                 id="g1091" />
+              <g
+                 class="legendlines"
+                 id="g1093" />
+              <g
+                 class="legendsymbols"
+                 id="g1099">
+                <g
+                   class="legendpoints"
+                   id="g1097">
+                  <path
+                     class="legendundefined"
+                     d="M6,6H-6V-6H6Z"
+                     transform="translate(20,0)"
+                     style="stroke-width: 0.5px; fill: rgb(25, 211, 243); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                     id="path1095" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="157.375"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect1103" />
+          </g>
+          <g
+             class="traces"
+             transform="translate(0, 128.5)"
+             style="opacity: 1;"
+             id="g1123">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text1107">Other activity</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g1119">
+              <g
+                 class="legendfill"
+                 id="g1109" />
+              <g
+                 class="legendlines"
+                 id="g1111" />
+              <g
+                 class="legendsymbols"
+                 id="g1117">
+                <g
+                   class="legendpoints"
+                   id="g1115">
+                  <path
+                     class="legendundefined"
+                     d="M6,6H-6V-6H6Z"
+                     transform="translate(20,0)"
+                     style="stroke-width: 0.5px; fill: rgb(255, 102, 146); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                     id="path1113" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="157.375"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect1121" />
+          </g>
+          <g
+             class="traces"
+             transform="translate(0, 147.5)"
+             style="opacity: 1;"
+             id="g1141">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text1125">Neurological activity</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g1137">
+              <g
+                 class="legendfill"
+                 id="g1127" />
+              <g
+                 class="legendlines"
+                 id="g1129" />
+              <g
+                 class="legendsymbols"
+                 id="g1135">
+                <g
+                   class="legendpoints"
+                   id="g1133">
+                  <path
+                     class="legendundefined"
+                     d="M6,6H-6V-6H6Z"
+                     transform="translate(20,0)"
+                     style="stroke-width: 0.5px; fill: rgb(182, 232, 128); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                     id="path1131" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="157.375"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect1139" />
+          </g>
+          <g
+             class="traces"
+             transform="translate(0, 166.5)"
+             style="opacity: 1;"
+             id="g1159">
+            <text
+               class="legendtext"
+               text-anchor="start"
+               x="40"
+               y="4.680000000000001"
+               style="font-family: 'Open Sans', verdana, arial, sans-serif; font-size: 12px; fill: rgb(42, 63, 95); fill-opacity: 1; white-space: pre;"
+               id="text1143">Immunological activity</text>
+            <g
+               class="layers"
+               style="opacity: 1;"
+               id="g1155">
+              <g
+                 class="legendfill"
+                 id="g1145" />
+              <g
+                 class="legendlines"
+                 id="g1147" />
+              <g
+                 class="legendsymbols"
+                 id="g1153">
+                <g
+                   class="legendpoints"
+                   id="g1151">
+                  <path
+                     class="legendundefined"
+                     d="M6,6H-6V-6H6Z"
+                     transform="translate(20,0)"
+                     style="stroke-width: 0.5px; fill: rgb(255, 151, 255); fill-opacity: 1; stroke: rgb(229, 236, 246); stroke-opacity: 1;"
+                     id="path1149" />
+                </g>
+              </g>
+            </g>
+            <rect
+               class="legendtoggle"
+               x="0"
+               y="-9.5"
+               width="157.375"
+               height="19"
+               style="fill: rgb(0, 0, 0); fill-opacity: 0;"
+               id="rect1157" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="scrollbar"
+         rx="20"
+         ry="3"
+         width="0"
+         height="0"
+         style="fill: rgb(128, 139, 164); fill-opacity: 1;"
+         x="0"
+         y="0"
+         id="rect1165" />
+    </g>
+    <g
+       class="g-gtitle"
+       id="g1169" />
+    <g
+       class="g-xtitle"
+       id="g1171" />
+    <g
+       class="g-ytitle"
+       id="g1173" />
+  </g>
+</svg>

@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="160mm"
+   viewBox="0 0 210 170"
+   version="1.1"
+   id="svg1339"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   sodipodi:docname="2.svg">
+  <defs
+     id="defs1333">
+    <clipPath
+       id="highcharts-tch4kbf-35-">
+      <rect
+         x="0"
+         y="0"
+         width="580"
+         height="340"
+         fill="none"
+         id="rect4" />
+    </clipPath>
+    <clipPath
+       id="legend5e35d3">
+      <rect
+         width="163"
+         height="200"
+         x="0"
+         y="0"
+         id="rect125" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="400"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1360"
+     inkscape:window-height="716"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1336">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       class="highcharts-series-group"
+       data-z-index="3"
+       aria-hidden="false"
+       id="g77"
+       transform="matrix(0.42080833,0,0,0.3655329,-21.306514,-3.1706933)"
+       style="font-size:12px;font-family:'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, sans-serif">
+      <g
+         class="highcharts-series highcharts-series-0 highcharts-dependencywheel-series"
+         data-z-index="0.1"
+         opacity="1"
+         transform="translate(10,45)"
+         clip-path="url(#highcharts-tch4kbf-35-)"
+         aria-hidden="false"
+         aria-label=""
+         id="g73-6">
+        <path
+           fill="#7cb5ec"
+           fill-opacity="0.5"
+           d="M 305.67646,19.815951 A 150,150 0 0 1 435.19068,128.5191 c -3.83424,1.09544 -2.19419,7.35419 1.68454,6.42851 A 150,150 0 0 1 377.31341,293.19647 C 324.92536,219.27859 296.27058,109.92638 305.67646,19.815951"
+           class="highcharts-point highcharts-color-0"
+           tabindex="-1"
+           role="img"
+           aria-label="1. From Propeptide to Signal: 5508."
+           id="path15"
+           style="fill:#636efa;fill-opacity:0.3" />
+        <path
+           fill="#7cb5ec"
+           fill-opacity="0.5"
+           d="m 304.0877,19.658599 a 150,150 0 0 1 0.84322,0.0814 c -8.95855,90.156001 5.08609,207.246661 35.11161,292.726641 a 150,150 0 0 1 -0.80005,0.27851 C 309.69699,227.09806 295.63508,109.86344 304.0877,19.658599"
+           class="highcharts-point highcharts-color-2"
+           tabindex="-1"
+           role="img"
+           aria-label="3. From Propeptide to Sensorial: 26."
+           id="path19"
+           style="fill:#636efa;fill-opacity:1" />
+        <path
+           fill="#7cb5ec"
+           fill-opacity="0.5"
+           d="m 290.42357,19.000594 a 150,150 0 0 1 13.66413,0.658005 C 295.63508,109.86344 234.9834,194.92656 152.4585,232.31641 a 150,150 0 0 1 -5.07537,-12.70362 C 232.95325,189.84512 290.16943,109.60024 290.42357,19.000594"
+           class="highcharts-point highcharts-color-3"
+           tabindex="-1"
+           role="img"
+           aria-label="4. From Propeptide to Therapeutic: 420."
+           id="path21"
+           style="fill:#636efa;fill-opacity:0.3" />
+        <path
+           fill="#7cb5ec"
+           fill-opacity="0.5"
+           d="m 290,19 c 0.14119,-1e-6 0.28238,1.97e-4 0.42357,5.94e-4 -0.25414,90.599646 -54.99523,125.113226 -136.85271,86.283956 0.0605,-0.12757 0.1212,-0.25505 0.18207,-0.38245 50.4376,24.09874 90.50209,20.24862 113.79339,-7.515176 C 282.00508,80.151725 290,53.700975 290,19"
+           class="highcharts-point highcharts-color-4"
+           tabindex="-1"
+           role="img"
+           aria-label="5. From Propeptide to Immunological: 13."
+           id="path23"
+           sodipodi:nodetypes="ccccsc"
+           style="fill:#7cb5ec;fill-opacity:0.7" />
+        <path
+           fill="#434348"
+           fill-opacity="0.5"
+           d="m 358.74089,304.44586 a 150,150 0 0 1 -0.34836,0.17755 c -5.32089,-10.4736 -21.90323,-3.3605 -17.98127,7.71318 a 150,150 0 0 1 -0.36873,0.13005 c -4.04876,-11.52647 13.13677,-18.89832 18.69836,-8.02078"
+           class="highcharts-point highcharts-color-5"
+           tabindex="-1"
+           role="img"
+           aria-label="6. From Signal to Sensorial: 12."
+           id="path25" />
+        <path
+           fill="#434348"
+           fill-opacity="0.5"
+           d="m 374.01332,295.47016 a 150,150 0 0 1 -15.27243,8.9757 C 317.49635,223.77835 238.28124,201.19824 160.70311,247.9956 a 150,150 0 0 1 -8.24461,-15.67919 c 82.5249,-37.38985 171.14683,-12.12834 221.55482,63.15375"
+           class="highcharts-point highcharts-color-6"
+           tabindex="-1"
+           role="img"
+           aria-label="7. From Signal to Therapeutic: 544."
+           id="path27-2"
+           style="fill:#ef553b;fill-opacity:0.3" />
+        <path
+           fill="#434348"
+           fill-opacity="0.5"
+           d="m 377.31341,293.19647 a 150,150 0 0 1 -3.30009,2.27369 C 323.60533,220.18807 234.76061,145.57114 151.90152,108.92784 a 150,150 0 0 1 1.66934,-3.64329 c 81.85748,38.82927 171.3545,113.99404 223.74255,187.91192"
+           class="highcharts-point highcharts-color-7"
+           tabindex="-1"
+           role="img"
+           aria-label="8. From Signal to Immunological: 123."
+           id="path29"
+           style="fill:#ef553b;fill-opacity:0.7" />
+        <path
+           fill="#f7a35c"
+           fill-opacity="0.5"
+           d="m 326.65914,316.48245 a 150,150 0 0 1 -2.28008,0.55183 C 303.75162,228.81371 252.12851,122.94779 195.32127,52.369483 a 150,150 0 0 1 1.83886,-1.456676 C 252.86405,122.36512 304.66366,228.59298 326.65914,316.48245"
+           class="highcharts-point highcharts-color-8"
+           tabindex="-1"
+           role="img"
+           aria-label="9. From Sensorial to Drug delivery: 72."
+           id="path31" />
+        <path
+           fill="#f7a35c"
+           fill-opacity="0.5"
+           d="m 324.37906,317.03428 a 150,150 0 0 1 -88.94655,-6.23872 c 1.92625,-4.97011 -5.96917,-8.30041 -8.18433,-3.45216 a 150,150 0 0 1 -66.54507,-59.3478 c 77.57813,-46.79736 143.04851,-19.18189 163.67595,69.03868"
+           class="highcharts-point highcharts-color-9"
+           tabindex="-1"
+           role="img"
+           aria-label="10. From Sensorial to Therapeutic: 2778."
+           id="path33"
+           style="fill:#ab63fa;fill-opacity:0.3" />
+        <path
+           fill="#f7a35c"
+           fill-opacity="0.5"
+           d="m 327.32253,316.31483 a 150,150 0 0 1 -0.66339,0.16762 C 304.66366,228.59298 260.57878,117.2501 216.44695,38.125252 a 150,150 0 0 1 0.59832,-0.331939 c 43.77284,79.324017 87.88374,190.732617 110.27726,278.521517"
+           class="highcharts-point highcharts-color-0"
+           tabindex="-1"
+           role="img"
+           aria-label="11. From Sensorial to Other: 21."
+           id="path35-9"
+           style="fill:#f7a35c;fill-opacity:1" />
+        <path
+           fill="#f7a35c"
+           fill-opacity="0.5"
+           d="m 339.24248,312.74515 a 150,150 0 0 1 -11.91995,3.56968 C 304.92901,228.52593 280.436,110.36201 266.08999,20.905025 a 150,150 0 0 1 12.35675,-1.462397 c 6.93196,90.334422 31.25025,207.655432 60.79574,293.302522"
+           class="highcharts-point highcharts-color-1"
+           tabindex="-1"
+           role="img"
+           aria-label="12. From Sensorial to Neurological: 382."
+           id="path37" />
+        <path
+           fill="#e4d354"
+           fill-opacity="0.5"
+           d="M 157.88871,96.872657 A 150,150 0 0 1 195.32127,52.369483 C 247.74046,117.496 222.63131,171.99942 139.06646,174.47951 a 150,150 0 0 1 9.5,-57.37141 c 12.53221,4.68667 21.02843,-13.75574 9.32225,-20.235443"
+           class="highcharts-point highcharts-color-2"
+           tabindex="-1"
+           role="img"
+           aria-label="13. From Drug delivery to Therapeutic: 1796."
+           id="path39"
+           style="fill:#ffa15a;fill-opacity:0.3" />
+        <path
+           fill="#e4d354"
+           fill-opacity="0.5"
+           d="m 200.74687,48.201482 a 150,150 0 0 1 0.55283,-0.403184 c 3.03082,4.175546 9.88752,-0.509256 7.09927,-4.850541 a 150,150 0 0 1 0.57656,-0.368456 c 3.20912,5.046738 -4.69362,10.446243 -8.22866,5.622181"
+           class="highcharts-point highcharts-color-3"
+           tabindex="-1"
+           role="img"
+           aria-label="14. From Drug delivery to Other: 21."
+           id="path41" />
+        <path
+           fill="#e4d354"
+           fill-opacity="0.5"
+           d="m 197.16013,50.912807 a 150,150 0 0 1 3.58674,-2.711325 c 10.39824,14.18987 32.64356,0.996734 25.17871,-14.932856 a 150,150 0 0 1 4.0993,-1.847071 c 9.13035,21.096581 -18.73121,37.620569 -32.86475,19.491252"
+           class="highcharts-point highcharts-color-4"
+           tabindex="-1"
+           role="img"
+           aria-label="15. From Drug delivery to Neurological: 138."
+           id="path43-1"
+           style="fill:#ffa15a;fill-opacity:0.5" />
+        <path
+           fill="#8085e9"
+           fill-opacity="0.5"
+           d="m 139.51671,182.48121 a 150,150 0 0 1 -0.45025,-8.0017 c 90.56012,-2.6877 118.75504,-55.59413 70.48728,-132.266049 a 150,150 0 0 1 6.89321,-4.088209 C 260.57878,117.2501 229.80669,174.99248 139.51671,182.48121"
+           class="highcharts-point highcharts-color-5"
+           tabindex="-1"
+           role="img"
+           aria-label="16. From Therapeutic to Other: 246."
+           id="path45"
+           style="fill:#19d3f3;fill-opacity:0.3" />
+        <path
+           fill="#8085e9"
+           fill-opacity="0.5"
+           d="m 147.38313,219.61279 a 150,150 0 0 1 -7.86642,-37.13158 c 90.28998,-7.48873 126.49324,-67.91259 90.50817,-151.059655 A 150,150 0 0 1 266.47677,20.843513 C 280.59071,110.33741 232.95325,189.84512 147.38313,219.61279"
+           class="highcharts-point highcharts-color-6"
+           tabindex="-1"
+           role="img"
+           aria-label="17. From Therapeutic to Neurological: 1168."
+           id="path47"
+           style="fill:#19d3f3;fill-opacity:0.3" />
+        <path
+           fill="#8085e9"
+           fill-opacity="0.5"
+           d="m 148.50513,117.27237 a 150,150 0 0 1 0.12555,-0.3357 c 4.65889,1.74873 7.68212,-5.67902 3.12627,-7.68087 a 150,150 0 0 1 0.14457,-0.32796 c 4.94443,2.18661 1.66965,10.23237 -3.39639,8.34453"
+           class="highcharts-point highcharts-color-7"
+           tabindex="-1"
+           role="img"
+           aria-label="18. From Therapeutic to Immunological: 11."
+           id="path49" />
+        <path
+           fill="#f45b5b"
+           fill-opacity="0.5"
+           d="m 225.30666,33.560372 a 150,150 0 0 1 0.61892,-0.291746 c 2.53795,5.415858 -5.99061,9.761324 -8.88031,4.524687 a 150,150 0 0 1 0.59983,-0.329224 c 2.4725,4.528999 9.87225,0.75868 7.66156,-3.903717"
+           class="highcharts-point highcharts-color-8"
+           tabindex="-1"
+           role="img"
+           aria-label="19. From Neurological to Other: 21."
+           id="path51-2" />
+        <path
+           fill="#f15c80"
+           fill-opacity="0.5"
+           d="m 153.75293,104.9021 a 150,150 0 0 1 0.29638,-0.61671 c 45.20259,21.84962 81.86625,-19.339655 54.92622,-61.706089 a 150,150 0 0 1 0.57821,-0.36584 c 27.18522,43.182926 -9.75881,84.687189 -55.80081,62.688639"
+           class="highcharts-point highcharts-color-9"
+           tabindex="-1"
+           role="img"
+           aria-label="20. From Immunological to Other: 21."
+           id="path53"
+           style="fill:#ff97ff;fill-opacity:1" />
+        <path
+           fill="#7cb5ec"
+           d="m 290,0 a 170,170 0 0 1 163.7551,124.34621 l -19.26531,5.37103 A 150,150 0 0 0 290,20 Z"
+           class="highcharts-point highcharts-color-0 highcharts-node"
+           id="path55"
+           style="fill:#636efa;fill-opacity:1" />
+        <path
+           fill="#434348"
+           d="m 455.35621,130.53705 a 170,170 0 0 1 -88.43463,191.06464 l -9.0496,-17.8355 a 150,150 0 0 0 78.03056,-168.58644 z"
+           class="highcharts-point highcharts-color-1 highcharts-node"
+           id="path57"
+           style="fill:#ef553b;fill-opacity:1" />
+        <path
+           fill="#f7a35c"
+           d="m 346.7544,330.24649 a 170,170 0 0 1 -118.64869,-1.91425 l 7.28168,-18.62733 a 150,150 0 0 0 104.69002,1.68905 z"
+           class="highcharts-point highcharts-color-3 highcharts-node"
+           id="path61"
+           style="fill:#ab63fa;fill-opacity:1" />
+        <path
+           fill="#8085e9"
+           d="m 219.35226,324.62502 a 170,170 0 0 1 -88.56943,-214.206 l 18.73143,7.00953 a 150,150 0 0 0 78.1495,189.00529 z"
+           class="highcharts-point highcharts-color-4 highcharts-node"
+           id="path63"
+           style="fill:#19d3f3;fill-opacity:1" />
+        <path
+           fill="#f15c80"
+           d="m 134.36213,101.61249 a 170,170 0 0 1 2.53395,-5.498829 l 18.01223,8.692509 a 150,150 0 0 0 -2.23585,4.85191 z"
+           class="highcharts-point highcharts-color-5 highcharts-node"
+           id="path65"
+           style="fill:#ff97ff;fill-opacity:1" />
+        <path
+           fill="#e4d354"
+           d="M 141.26544,87.671203 A 170,170 0 0 1 190.27955,32.319822 L 202.01137,48.51749 A 150,150 0 0 0 158.76362,97.356944 Z"
+           class="highcharts-point highcharts-color-6 highcharts-node"
+           id="path67-7"
+           style="fill:#ffa15a;fill-opacity:1" />
+        <path
+           fill="#2b908f"
+           d="m 198.13129,26.961051 a 170,170 0 0 1 10.5629,-6.257283 l 9.56539,17.564263 a 150,150 0 0 0 -9.3202,5.521131 z"
+           class="highcharts-point highcharts-color-7 highcharts-node"
+           id="path69"
+           style="fill:#ff6692;fill-opacity:1" />
+        <path
+           fill="#f45b5b"
+           d="M 217.16644,16.392472 A 170,170 0 0 1 276.82353,0.51141463 L 278.3737,20.451248 a 150,150 0 0 0 -52.6386,14.012698 z"
+           class="highcharts-point highcharts-color-8 highcharts-node"
+           id="path71"
+           style="fill:#b6e880;fill-opacity:1" />
+      </g>
+      <g
+         class="highcharts-markers highcharts-series-0 highcharts-dependencywheel-series"
+         data-z-index="0.1"
+         opacity="1"
+         transform="translate(10,45)"
+         clip-path="none"
+         aria-hidden="true"
+         id="g75" />
+    </g>
+    <g
+       class="infolayer"
+       id="g327"
+       transform="matrix(0.27276179,0,0,0.35177566,78.966271,94.910404)">
+      <g
+         class="legend"
+         pointer-events="all"
+         transform="translate(524.72,60)"
+         id="g323">
+        <g
+           class="scrollbox"
+           clip-path="url(#legend5e35d3)"
+           id="g319"
+           transform="translate(-221.37501,-6.5000018)">
+          <g
+             class="groups"
+             id="g317">
+            <g
+               class="traces"
+               transform="translate(-8.0000001,153.5)"
+               style="opacity:1"
+               id="g315">
+              <text
+                 class="legendtext"
+                 text-anchor="start"
+                 x="40"
+                 y="4.6799998"
+                 style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+                 id="text299">Other activity</text>
+              <g
+                 class="layers"
+                 style="opacity:1"
+                 id="g311">
+                <g
+                   class="legendfill"
+                   id="g301" />
+                <g
+                   class="legendlines"
+                   id="g303" />
+                <g
+                   class="legendsymbols"
+                   id="g309">
+                  <g
+                     class="legendpoints"
+                     id="g307">
+                    <path
+                       class="legendpie"
+                       d="M 6,6 H -6 V -6 H 6 Z"
+                       transform="translate(20)"
+                       style="fill:#ff6692;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+                       id="path305" />
+                  </g>
+                </g>
+              </g>
+              <rect
+                 class="legendtoggle"
+                 x="0"
+                 y="-9.5"
+                 width="157.375"
+                 height="19"
+                 style="fill:#000000;fill-opacity:0"
+                 id="rect313" />
+            </g>
+          </g>
+        </g>
+        <rect
+           class="scrollbar"
+           rx="20"
+           ry="3"
+           width="0"
+           height="0"
+           style="fill:#808ba4;fill-opacity:1"
+           x="0"
+           y="0"
+           id="rect321" />
+      </g>
+      <g
+         class="g-gtitle"
+         id="g325" />
+    </g>
+    <g
+       class="traces"
+       transform="matrix(0.27276179,0,0,0.35177566,17.143441,158.93359)"
+       style="opacity:1"
+       id="g153">
+      <text
+         class="legendtext"
+         text-anchor="start"
+         x="40"
+         y="4.6799998"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text137">Therapeutic</text>
+      <g
+         class="layers"
+         style="opacity:1"
+         id="g149">
+        <g
+           class="legendfill"
+           id="g139" />
+        <g
+           class="legendlines"
+           id="g141" />
+        <g
+           class="legendsymbols"
+           id="g147">
+          <g
+             class="legendpoints"
+             id="g145">
+            <path
+               class="legendpie"
+               d="M 6,6 H -6 V -6 H 6 Z"
+               transform="translate(20)"
+               style="fill:#19d3f3;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+               id="path143" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="legendtoggle"
+         x="0"
+         y="-9.5"
+         width="157.375"
+         height="19"
+         style="fill:#000000;fill-opacity:0"
+         id="rect151" />
+    </g>
+    <g
+       class="traces"
+       transform="matrix(0.27276179,0,0,0.35177566,47.147241,158.93359)"
+       style="opacity:1"
+       id="g171">
+      <text
+         class="legendtext"
+         text-anchor="start"
+         x="40"
+         y="4.6799998"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text155">Non activity</text>
+      <g
+         class="layers"
+         style="opacity:1"
+         id="g167">
+        <g
+           class="legendfill"
+           id="g157" />
+        <g
+           class="legendlines"
+           id="g159" />
+        <g
+           class="legendsymbols"
+           id="g165">
+          <g
+             class="legendpoints"
+             id="g163">
+            <path
+               class="legendpie"
+               d="M 6,6 H -6 V -6 H 6 Z"
+               transform="translate(20)"
+               style="fill:#fecb52;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+               id="path161" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="legendtoggle"
+         x="0"
+         y="-9.5"
+         width="157.375"
+         height="19"
+         style="fill:#000000;fill-opacity:0"
+         id="rect169" />
+    </g>
+    <g
+       class="traces"
+       transform="matrix(0.27276179,0,0,0.35177566,77.151041,158.93359)"
+       style="opacity:1"
+       id="g189">
+      <text
+         class="legendtext"
+         text-anchor="start"
+         x="40"
+         y="4.6799998"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text173">Signal</text>
+      <g
+         class="layers"
+         style="opacity:1"
+         id="g185">
+        <g
+           class="legendfill"
+           id="g175" />
+        <g
+           class="legendlines"
+           id="g177" />
+        <g
+           class="legendsymbols"
+           id="g183">
+          <g
+             class="legendpoints"
+             id="g181">
+            <path
+               class="legendpie"
+               d="M 6,6 H -6 V -6 H 6 Z"
+               transform="translate(20)"
+               style="fill:#ef553b;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+               id="path179" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="legendtoggle"
+         x="0"
+         y="-9.5"
+         width="157.375"
+         height="19"
+         style="fill:#000000;fill-opacity:0"
+         id="rect187" />
+    </g>
+    <g
+       class="traces"
+       transform="matrix(0.27276179,0,0,0.35177566,100.33579,158.93359)"
+       style="opacity:1"
+       id="g207">
+      <text
+         class="legendtext"
+         text-anchor="start"
+         x="40"
+         y="4.6799998"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text191">Sensorial</text>
+      <g
+         class="layers"
+         style="opacity:1"
+         id="g203">
+        <g
+           class="legendfill"
+           id="g193" />
+        <g
+           class="legendlines"
+           id="g195" />
+        <g
+           class="legendsymbols"
+           id="g201">
+          <g
+             class="legendpoints"
+             id="g199">
+            <path
+               class="legendpie"
+               d="M 6,6 H -6 V -6 H 6 Z"
+               transform="translate(20)"
+               style="fill:#ab63fa;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+               id="path197" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="legendtoggle"
+         x="0"
+         y="-9.5"
+         width="157.375"
+         height="19"
+         style="fill:#000000;fill-opacity:0"
+         id="rect205" />
+    </g>
+    <g
+       class="traces"
+       transform="matrix(0.27276179,0,0,0.35177566,90.789131,167.72797)"
+       style="opacity:1"
+       id="g225">
+      <text
+         class="legendtext"
+         text-anchor="start"
+         x="40"
+         y="4.6799998"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text209">Propeptide</text>
+      <g
+         class="layers"
+         style="opacity:1"
+         id="g221">
+        <g
+           class="legendfill"
+           id="g211" />
+        <g
+           class="legendlines"
+           id="g213" />
+        <g
+           class="legendsymbols"
+           id="g219">
+          <g
+             class="legendpoints"
+             id="g217">
+            <path
+               class="legendpie"
+               d="M 6,6 H -6 V -6 H 6 Z"
+               transform="translate(20)"
+               style="fill:#636efa;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+               id="path215" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="legendtoggle"
+         x="0"
+         y="-9.5"
+         width="157.375"
+         height="19"
+         style="fill:#000000;fill-opacity:0"
+         id="rect223" />
+    </g>
+    <g
+       class="traces"
+       transform="matrix(0.27276179,0,0,0.35177566,127.61197,158.93359)"
+       style="opacity:1"
+       id="g243">
+      <text
+         class="legendtext"
+         text-anchor="start"
+         x="40"
+         y="4.6799998"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text227">Drug delivery vehicle</text>
+      <g
+         class="layers"
+         style="opacity:1"
+         id="g239">
+        <g
+           class="legendfill"
+           id="g229" />
+        <g
+           class="legendlines"
+           id="g231" />
+        <g
+           class="legendsymbols"
+           id="g237">
+          <g
+             class="legendpoints"
+             id="g235">
+            <path
+               class="legendpie"
+               d="M 6,6 H -6 V -6 H 6 Z"
+               transform="translate(20)"
+               style="fill:#ffa15a;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+               id="path233" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="legendtoggle"
+         x="0"
+         y="-9.5"
+         width="157.375"
+         height="19"
+         style="fill:#000000;fill-opacity:0"
+         id="rect241" />
+    </g>
+    <g
+       class="traces"
+       transform="matrix(0.27276179,0,0,0.35177566,47.147241,167.72797)"
+       style="opacity:1"
+       id="g261">
+      <text
+         class="legendtext"
+         text-anchor="start"
+         x="40"
+         y="4.6799998"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text245">Immunological activity</text>
+      <g
+         class="layers"
+         style="opacity:1"
+         id="g257">
+        <g
+           class="legendfill"
+           id="g247" />
+        <g
+           class="legendlines"
+           id="g249" />
+        <g
+           class="legendsymbols"
+           id="g255">
+          <g
+             class="legendpoints"
+             id="g253">
+            <path
+               class="legendpie"
+               d="M 6,6 H -6 V -6 H 6 Z"
+               transform="translate(20)"
+               style="fill:#ff97ff;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+               id="path251" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="legendtoggle"
+         x="0"
+         y="-9.5"
+         width="157.375"
+         height="19"
+         style="fill:#000000;fill-opacity:0"
+         id="rect259" />
+    </g>
+    <g
+       class="traces"
+       transform="matrix(0.27276179,0,0,0.35177566,17.143441,167.72797)"
+       style="opacity:1"
+       id="g279">
+      <text
+         class="legendtext"
+         text-anchor="start"
+         x="40"
+         y="4.6799998"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text263">Transit</text>
+      <g
+         class="layers"
+         style="opacity:1"
+         id="g275">
+        <g
+           class="legendfill"
+           id="g265" />
+        <g
+           class="legendlines"
+           id="g267" />
+        <g
+           class="legendsymbols"
+           id="g273">
+          <g
+             class="legendpoints"
+             id="g271">
+            <path
+               class="legendpie"
+               d="M 6,6 H -6 V -6 H 6 Z"
+               transform="translate(20)"
+               style="fill:#00cc96;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+               id="path269" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="legendtoggle"
+         x="0"
+         y="-9.5"
+         width="157.375"
+         height="19"
+         style="fill:#000000;fill-opacity:0"
+         id="rect277" />
+    </g>
+    <g
+       class="traces"
+       transform="matrix(0.27276179,0,0,0.35177566,120.79293,167.72797)"
+       style="opacity:1"
+       id="g297">
+      <text
+         class="legendtext"
+         text-anchor="start"
+         x="40"
+         y="4.6799998"
+         style="font-size:12px;font-family:'Open Sans', verdana, arial, sans-serif;white-space:pre;fill:#2a3f5f;fill-opacity:1"
+         id="text281">Neurological activity</text>
+      <g
+         class="layers"
+         style="opacity:1"
+         id="g293">
+        <g
+           class="legendfill"
+           id="g283" />
+        <g
+           class="legendlines"
+           id="g285" />
+        <g
+           class="legendsymbols"
+           id="g291">
+          <g
+             class="legendpoints"
+             id="g289">
+            <path
+               class="legendpie"
+               d="M 6,6 H -6 V -6 H 6 Z"
+               transform="translate(20)"
+               style="fill:#b6e880;fill-opacity:1;stroke:#444444;stroke-width:0;stroke-opacity:1"
+               id="path287" />
+          </g>
+        </g>
+      </g>
+      <rect
+         class="legendtoggle"
+         x="0"
+         y="-9.5"
+         width="157.375"
+         height="19"
+         style="fill:#000000;fill-opacity:0"
+         id="rect295" />
+    </g>
+  </g>
+</svg>

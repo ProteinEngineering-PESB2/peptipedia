@@ -1,0 +1,105 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+<div class="jumbotron mt-4">
+    <h1 class="display-4">Alignment sequences</h1>
+    <br>
+    <p class="lead">Peptipedia allows the alignment of sequences against its database, using the BlastP tool from the Blast suite. To do this, it is necessary to enter a sequence in Fasta format. The tool takes the sequence and aligns it against the generated database. The results are ordered by percent identity, the first match being the one with the closest phylogenetic relationship.</p>
+</div>
+
+
+
+<div id="all" class="card">
+    <h5 class="card-header">Inputs</h5>
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                {{!-- <label><a tabindex="0" data-toggle="popover" class="text-primary" data-trigger="focus" title="Sequences in FASTA format:" data-content="{{#each statistics}}{{calculation Name 'Glossary' test}}{{/each}}" style="cursor:pointer;:hover{text-decoration:underline;}">Sequences in FASTA format:</a></label> --}}
+                <label>Sequences in FASTA format:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            </div>
+            <div class="text-center">
+                <button id="btn1" type='button' class="btn btn-success btn-lg">Calculate</button>
+                <button type='button' class="btn btn-dark btn-lg" onclick="javascript:eraseText();">Clear</button>
+                <div hidden id="error_alert" class="alert alert-danger mt-3" role="alert">Data entry error</div>
+            </div>
+        </form>
+    </div>
+    <div hidden id="wait" class="text-center">
+    <h2>The results are being processed, this will take a few seconds</h2>
+    <i class="fa-5x fas fa-cog fa-spin"></i>
+    <br>
+    <br>
+    </div>
+    <h5 id="resultsh5" hidden class="card-header">Results</h5>
+    <div class="text-center" id="resultsdownload" hidden>
+        <button type='button' class="btn btn-dark btn-lg mt-3" onclick="javascript:downloadResults2();">Download results</button>
+    </div> 
+    <div id="resultsdiv" hidden class="card-body mx-0"></div>
+    <div id="resultsdownload" hidden></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.14/jspdf.plugin.autotable.min.js" integrity="sha512-m4dz/cB+GDbGitRXh/Ppt8vsDpD2nqhviX1eoD7wgu3xSO2B9EUKjZKsZLbmyUS0d43vLzakJcPFzxi7eHlmBw==" crossorigin="anonymous"></script>
+<script>
+    $("#btn1").click(function(){
+        $('#wait').attr('hidden', false);  
+        var now = new Date().getTime();
+        $.ajax({
+            //'url': "http://localhost/alignment/results",
+            'url': "http://peptipedia.cl/alignment/results",
+            'method': "POST",
+            'data' : { "sequences" : $("#exampleFormControlTextarea1").val(), "time": now}
+        }).done(function(data) {
+            console.log(data)
+            if (data != "error"){
+                $('#wait').attr('hidden', true);  
+                $('#resultsh5').attr('hidden', false); 
+                $('#resultsdiv').attr('hidden', false);
+                
+                //console.log(data.summary_alignment)
+                //console.log(data.summary_alignment[0])
+                //console.log(data.summary_alignment[0].input_sequence)
+                //console.log(data.summary_alignment.length)
+                function comparar(a, b) {
+                    return parseInt(a.distance_sequences) - parseInt(b.distance_sequences);
+                }
+                var i;
+                for (i = 0; i < 100; i++) {
+                    //console.log(data.summary_alignment[i]['input_sequence'])
+                    var templateString = "<div class='card text-center my-4'><div class='card-header'>ID sequence: "+data.summary_alignment[i]['id_sequence']+"</div><div class='card-body'><div class='table-responsive'><table id='mytable_"+i+"' class='table'><tbody><tr><th class='col-1' scope='row'>Input sequence:</th><td style='font-family: monospace;'>"+data.summary_alignment[i]['input_sequence']+"</td></tr><tr><th scope='row'>Space format:</th><td style='font-family: monospace;'>"+data.summary_alignment[i]['space_format']+"</td></tr><tr><th scope='row'>Compare sequence:</th><td style='font-family: monospace;'>"+data.summary_alignment[i]['compare_sequence']+"</td></tr></tbody></table></div><div class='card-footer'>Score of distance between sequences: "+data.summary_alignment[i]['distance_sequences']+"</div></div></div>"
+                    //var templateString = "<div class='card text-center my-4'><div class='card-header'>"+data.summary_alignment[i]['id_sequence']+"</div><div class='card-body'><p class='my-0 card-text' style='font-family: monospace;'>"+data.summary_alignment[i]['input_sequence']+"</p><p class='my-0 card-text' style='font-family: monospace;'>"+data.summary_alignment[i]['space_format']+"</p><p class='my-0 card-text' style='font-family: monospace;'>"+data.summary_alignment[i]['compare_sequence']+"</p></div><div class='card-footer text-muted'>"+data.summary_alignment[i]['distance_sequences']+"</div></div>"
+                    $('#resultsdiv').append(templateString);
+                }
+                $('#resultsdownload').attr('hidden', false);
+            }else{
+                $('#wait').attr('hidden', true);  
+                $('#resultsh5').attr('hidden', true); 
+                $('#resultsdiv').attr('hidden', true);
+                $('#error_alert').fadeIn();;
+                $('#error_alert').attr('hidden', false)
+                setTimeout(function() {$('#error_alert').fadeOut();}, 3000)
+            }
+        });
+
+    });
+
+function eraseText() {
+    document.getElementById("exampleFormControlTextarea1").value = "";
+    $("#exampleFormControlTextarea1").focus();
+}
+function downloadResults2() {
+    var doc = new jsPDF('p', 'pt');
+    var width = doc.internal.pageSize.width;
+    var height = doc.internal.pageSize.height; 
+    
+    //doc.fromHTML($('#resultsdiv')[0],15,30)
+    var i = 0
+    for (i = 0; i < 100; i++) {
+        doc.autoTable({ html: '#mytable_'+i })
+    }
+    doc.save("Results.pdf");
+}
+</script>

@@ -1,0 +1,230 @@
+<link rel="stylesheet" href="/css/buttons.dataTables.min.css">
+<div class="jumbotron mt-4">
+    <h1 class="display-4">Peptide Sequence Characterization</h1>
+    <br>
+    <p class="lead">Amino acid sequences can be characterized using physicochemical and structural properties. To do this, Peptipedia in combination with the MODLAMP library [1], estimates the properties of one or a set of peptide sequences. First, complete the form by entering the sequences in Fasta format and pressing the Calculate button. In the case of being only a single sequence, Peptipedia provides a general breakdown of the estimated information, together with the hydrophobic profile and the helical wheel analysis. For sequence sets, generates a downloadable summary table.</p>
+</div>
+
+<div id="canvas"></div>
+<div class="card">
+    <h5 class="card-header">Inputs</h5>    
+    <div class="card-body">
+        <form>
+            <div class="form-group">
+                {{!-- <label><a tabindex="0" data-toggle="popover" class="text-primary" data-trigger="focus" title="Sequences in FASTA format:" data-content="{{#each statistics}}{{calculation Name 'Glossary' test}}{{/each}}" style="cursor:pointer;:hover{text-decoration:underline;}">Sequences in FASTA format:</a></label> --}}
+                <label>Sequences in FASTA format:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
+            </div>
+            <div class="text-center">
+                <button id="btn1" type='button' class="btn btn-success btn-lg">Calculate</button>
+                <button type='button' class="btn btn-dark btn-lg" onclick="javascript:eraseText();">Clear</button>
+                <div hidden id="error_alert" class="alert alert-danger mt-3" role="alert">Data entry error</div>
+            </div>
+        </form>
+    </div>
+
+    <div hidden id="wait" class="text-center">
+    <h2>The results are being processed, this will take a few seconds</h2>
+    <i class="fa-5x fas fa-cog fa-spin"></i>
+    <br>
+    <br>
+    </div>
+
+    <div hidden id="all" class="card">
+    <h5 class="card-header">Results</h5>    
+    <div class="card-body">
+        <div class="table-responsive">
+            <table id="tabla" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                    <th scope="col">Sequence id</th>
+                    <th scope="col">Aliphatic index</th>
+                    <th scope="col">Aromaticity</th>
+                    <th scope="col">Boman index</th>
+                    <th scope="col">Calculate moment</th>
+                    <th scope="col">Charge</th>
+                    <th scope="col">Charge density</th>
+                    <th scope="col">Formula</th>
+                    <th scope="col">Hydrophobic profile</th>
+                    <th scope="col">Hydrophobic ratio</th>
+                    <th scope="col">Hydrophobicity profile</th>
+                    <th scope="col">Instability index</th>
+                    <th scope="col">Isoelectric point</th>
+                    <th scope="col">Length</th>
+                    <th scope="col">Molecular weigth</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+    <div hidden id="allb" class="card-group">
+        <div id="seq_info" class="card">
+            <h5 class="card-header">Sequence information</h5>    
+            <div class="card-body">
+            <h5 class="card-title">Sequence id:</h5><p id="p_sequence_id" class="card-text"></p>
+            <h5 class="card-title">Charge:</h5><p id="p_charge" class="card-text"></p>
+            <h5 class="card-title">Charge density:</h5><p id="p_charge_density" class="card-text"></p>
+            <h5 class="card-title">Formula:</h5><p id="p_formula" class="card-text"></p>
+            <h5 class="card-title">Length:</h5><p id="p_length" class="card-text"></p>
+            <h5 class="card-title">Molecular weigth:</h5><p id="p_molecular_weigth" class="card-text"></p>
+            <h5 class="card-title">Isoelectric point:</h5><p id="p_isoelectric_point" class="card-text"></p>
+            </div>
+        </div>
+        <div id="seq_properties" class="card">
+            <h5 class="card-header">Indices and physicochemical properties</h5>    
+            <div class="card-body">
+                <h5 class="card-title">Aliphatic index:</h5><p id="p_aliphatic_index" class="card-text"></p>
+                <h5 class="card-title">Aromaticity:</h5><p id="p_aromaticity" class="card-text"></p>
+                <h5 class="card-title">Boman index:</h5><p id="p_boman_index" class="card-text"></p>
+                <h5 class="card-title">Calculate moment:</h5><p id="p_calculate_moment" class="card-text"></p>
+                <h5 class="card-title">Hydrophobic profile:</h5><p id="p_hydrophobic_profile" class="card-text"></p>
+                <h5 class="card-title">Hydrophobic ratio:</h5><p id="p_hydrophobic_ratio" class="card-text"></p>
+                <h5 class="card-title">Hydrophobicity profile:</h5><p id="p_hydrophobicity_profile" class="card-text"></p>
+                <h5 class="card-title">Instability index:</h5><p id="p_instability_index" class="card-text"></p>
+            </div>
+        </div>
+  </div>
+   
+    <div hidden id="images" class="card">
+        <h5 class="card-header">Helical</h5>    
+        <div class="col-sm-12">
+            <div class="card">
+                <div style="text-align: center;">
+                    <img id="helical" class="card-img-top" src="" alt="Card image cap" style="max-width: 50%;">
+                <div class="card-body">
+                    <p class="card-text">A helical wheel is a type of plot or visual representation used to illustrate the properties of alpha helices in proteins. The sequence of amino acids that make up a helical region of the protein's secondary structure are plotted in a rotating manner where the angle of rotation between consecutive amino acids is 100°, so that the final representation looks down the helical axis.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="card-header">Profile</h5>    
+        <div class="col-sm-12">
+            <div class="card">
+                <div style="text-align: center;">
+                <img id="profile" class="card-img-top" src="" alt="Card image cap" style="max-width: 70%;">
+                <div class="card-body">
+                    <p class="card-text">Function to generate sequence profile plots of a given amino acid scale or a moment thereof. It tool can only plot one-dimensional amino acid scales given.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="text-center">
+        <button type='button' class="btn btn-dark btn-lg mt-3 mb-3" onclick="javascript:downloadResults2();">Download results</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+<br>
+<footer>[1] Müller, A. T., Gabernet, G., Hiss, J. A., & Schneider, G. (2017). modlAMP: Python for antimicrobial peptides. Bioinformatics, 33(17), 2753-2755.</footer>
+<script src="/js/pdfmake.min.js"></script>
+<script src="/js/vfs_fonts.js"></script>
+<script src="/js/dataTables.buttons.min.js"></script>
+<script src="/js/buttons.html5.min.js"></script>
+<script src="/js/buttons.flash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+<script>
+$("#btn1").click(function(){
+    var now = new Date().getTime();
+    $('#wait').attr('hidden', false);  
+     $('#images').attr('hidden', true);
+     $('#all').attr('hidden', true);
+     $('#error_alert').attr('hidden', true);
+        $.ajax({
+            //'url': "http://localhost/characterization/results",
+            'url': "http://peptipedia.cl/characterization/results",
+            'method': 'POST',
+            'data' : { "sequences" : $("#exampleFormControlTextarea1").val(), "time": now}
+        }).done( function(data) {
+            if (data != "error"){
+                $('#wait').attr('hidden', true);
+                $("#tabla td").remove(); 
+                //console.log(data)
+                $("#helical").attr("src", "/jobs/service1/"+now+"/helical.png");
+                $("#profile").attr("src", "/jobs/service1/"+now+"/profile.png");
+                var keys = Object.keys(data)
+                var values = Object.values(data[keys[0]])
+            
+                if(keys.length == 1){
+                    $('#allb').attr('hidden', false);
+                    $('#images').attr('hidden', false);
+                    $('#p_sequence_id').text(keys[0]);
+                    $('#p_charge').text(data[keys[0]]['charge']);
+                    $('#p_charge_density').text(data[keys[0]]['charge_density']);
+                    $('#p_formula').text(data[keys[0]]['formula']);
+                    $('#p_length').text(data[keys[0]]['length']);
+                    $('#p_molecular_weigth').text(data[keys[0]]['molecular_weigth']);
+                    $('#p_isoelectric_point').text(data[keys[0]]['isoelectric_point']);
+                    
+                    $('#p_aliphatic_index').text(data[keys[0]]['aliphatic_index']);
+                    $('#p_aromaticity').text(data[keys[0]]['aromaticity']);
+                    $('#p_boman_index').text(data[keys[0]]['boman_index']);
+                    $('#p_calculate_moment').text(data[keys[0]]['calculate_moment']);
+                    $('#p_hydrophobic_profile').text(data[keys[0]]['hydrophobic_profile']);
+                    $('#p_hydrophobic_ratio').text(data[keys[0]]['hydrophobic_ratio']);
+                    $('#p_hydrophobicity_profile').text(data[keys[0]]['hydrophobicity_profile']);
+                    $('#p_instability_index').text(data[keys[0]]['instability_index']);
+                }
+
+                if(keys.length > 1){
+                    $('#allb').attr('hidden', true);
+                    $('#all').attr('hidden', false);
+                    $('#images').attr('hidden', true);
+                    for (element in keys){
+                        flag = Object.values(data[keys[element]])
+                        $('#tabla').append('<tr id=row'+element+'>'+'</tr>');
+                        $('#row'+element).append('<td>'+keys[element]+'</td>');
+                        for (element2 in flag){
+                            $('#row'+element).append('<td>'+flag[element2]+'</td>');    
+                        }
+                    }
+                    $('#tabla').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        { extend: 'pdf', text: 'Download table in PDF', orientation: 'landscape', pageSize: 'LEGAL'},
+                        { extend: 'csv', text: 'Download table in CSV' }
+                    ]
+                    });	
+                }
+            }else{
+                $('#wait').attr('hidden', true);  
+                $('#images').attr('hidden', true);
+                $('#all').attr('hidden', true);
+                $('#allb').attr('hidden', true);
+                $('#error_alert').fadeIn();;
+                $('#error_alert').attr('hidden', false)
+                setTimeout(function() {$('#error_alert').fadeOut();}, 3000)
+            }
+        });          
+    });
+    
+function eraseText() {
+    document.getElementById("exampleFormControlTextarea1").value = "";
+    $("#exampleFormControlTextarea1").focus();
+}
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+
+function downloadResults2() {
+    var doc = new jsPDF('p', 'pt');
+    var width = doc.internal.pageSize.width;
+    var height = doc.internal.pageSize.height; 
+    doc.fromHTML($('#seq_info')[0],15,30)
+    doc.addPage();
+    doc.fromHTML($('#seq_properties')[0],15,20)
+    doc.addPage();
+    doc.text(20, 20, 'Helical');
+    doc.addImage($('#helical')[0], 'JPEG', 50, 50, 500, 400);
+    doc.addPage();
+    doc.text(20, 20, 'Profile');
+    doc.addImage($('#profile')[0], 'JPEG', 50, 30, 500, 400);
+    doc.save("Results.pdf");
+}
+</script>

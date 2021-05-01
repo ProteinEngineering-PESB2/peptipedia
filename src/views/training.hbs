@@ -1,0 +1,600 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css">
+  <div class="jumbotron mt-4">
+  <h1 class="display-4">Training predictive models</h1>
+  <br>
+  <p class="lead">The predictive model training service allows the user to train specific models for their sequences of interest. The sequences must be entered in a CSV file and must have two columns: Sequence and Response. To run the service, it is necessary to select the type of model to perform (classification if the response is binary or categorical and regression if the response is of the continuous type). It is then necessary to select the type of coding to be carried out (the same ones existing in the coding service). For the cases of Digital Signal Processing and Physicochemical Properties, it will be necessary to select the type of property to use. Finally, the supervised learning algorithm and its configuration hyperparameters are chosen. Peptipedia collects all the information and proceeds to develop the model with a k-fold cross-validation system. The value of k is selected according to the type of sequence. Once the model is generated, Peptipedia displays the performance results and statistical graphs that show the characteristics and trends of the predictive model. It is essential to mention that all the results and models generated are packed in a compressed file and are available for download.</p>
+</div>
+<div class="card">
+    <h5 class="card-header">Inputs</h5>    
+    <div class="card-body">
+      <form enctype="multipart/form-data" id="formuploadajax" method="post">
+      <label for="dataset">Upload the dataset fasta file: </label>
+        <input type="file" id="dataset" name="dataset"/>
+        <br/>
+        <label for="dataset">Upload the response dataset csv file: </label>
+        <input type="file" id="response" name="response"/>
+        <br/>
+    </form>
+      </form>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Select the type of encoding:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                <option value="1">One hot encoding</option>
+                <option value="2">Ordinal encoding</option>
+                <option value="3">Frequency of residues</option>
+                <option value="4">Physicochemical properties</option>
+                <option value="5">Digital signal</option>
+                <option value="6">Tape</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Select the type of property:</label>
+                <select class="form-control" id="exampleFormControlSelect2">
+                <option value="0">Alpha-structure group</option>
+                <option value="1">Betha-structure_group</option>
+                <option value="2">Energetic_group</option>
+                <option value="3">Hydropathy_group</option>
+                <option value="4">Hydrophobicity_group</option>
+                <option value="5">Index_group</option>
+                <option value="6">Secondary_structure_properties_group</option>
+                <option value="7">Volume_group</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="exampleFormControlSelect3">Select the type of response:</label>
+                <select class="form-control" id="exampleFormControlSelect3">
+                <option value="none">None selected</option>
+                <option value="0">Regresion</option>
+                <option value="1">Clasificacion</option>
+                </select>
+            </div>
+
+           <div class="form-group" id="exampleFormControlSelect44" style="display:none;">
+              <label>Select the prediction algorithm*</label>
+               <div>
+                <select  class="form-control" name="exampleFormControlSelect4" id="exampleFormControlSelect4">
+                  <option value="1">AdaBoostRegressor</option> 
+                  <option value="2">BaggingRegressor</option>
+                  <option value="3">DecisionTree</option>
+                  <option value="4">GradientBoostingRegressor</option>
+                  <option value="5">KNeighborsRegressor</option>
+                  <option value="6">MLPRegressor</option>
+                  <option value="7">NuSVR</option>
+                  <option value="8">RandomForestRegressor</option>
+                  <option value="9">SVR</option>
+                </select>
+               </div> 
+           </div>
+        
+           <div class="form-group" id="exampleFormControlSelect55" style="display:none;">
+            <label>Select the classification algorithm*</label>
+             <div>
+              <select class="form-control" name="exampleFormControlSelect5" id="exampleFormControlSelect5">
+                <option value="1">AdaBoostClassifier</option> 
+                <option value="2">BaggingClassifier</option>
+                <option value="3">BernoulliNB</option>
+                <option value="4">DecisionTree</option>
+                <option value="5">GaussianNB</option>
+                <option value="6">GradientBoostingClassifier</option>
+                <option value="7">KNeighborsClassifier</option>
+                <option value="8">MLPClassifier</option>
+                <option value="9">NuSVC</option>
+                <option value="10">RandomForestClassifier</option>
+                <option value="11">SVC</option>
+              </select>
+             </div> 
+        </div>      
+        <div class="text-center">
+            <button id="btn1" type='button' class="btn btn-success btn-lg">Calculate</button>
+            <div hidden id="error_alert" class="alert alert-danger mt-3" role="alert">Data entry error</div>
+        </div>
+        <div hidden id="wait" class="text-center">
+        <h2>The results are being processed, this will take a few seconds</h2>
+        <i class="fa-5x fas fa-cog fa-spin"></i>
+        <br>
+        <br>
+        </div>
+        <div hidden id="all" class="card text-center">
+        <h5 class="card-header">Results</h5>    
+        <div class="card-body">
+            <a id="download" target="_blank">
+                <i class="fa fa-download fa-5x" style="color:black"></i>
+            </a>
+            <br>
+            <br>
+            <p>The compressed file generated by Peptipedia has a summary file with sequences used for the encoding process and ignored. Besides, It creates a CSV file with sequences encoded. For the case of Digital Signal Processing and Physicochemical Properties, eight encodings are generated using the groups of properties identified in our previous work [1]. The representation of sequences in Digital Signal Space is achieved using the Fast Fourier Transformation algorithm over the sequences encoding by physicochemical properties. Finally, in Natural Language Processing, Peptipedia employs the Tape Library for getting embedding representation of the sequences using pre-training models.</p>
+        </div>
+        </div>
+  </div>
+</div>
+
+
+<div id="results_p" class="card">
+  <h5 class="card-header text-center">Prediction Results</h5>    
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Description of the fasta file</h5>    
+        <div class="card-body">
+        <h5 class="card-title">Number of sequences:</h5><p id="p_number_sequences" class="card-text"></p>
+        <h5 class="card-title">Average length of sequences:</h5><p id="p_average_length" class="card-text"></p>
+        </div>
+    </div>
+    <div id="seq_properties" class="card">
+        <h5 class="card-header">Model configuration parameters</h5>    
+        <div class="card-body">
+            <h5 class="card-title">Type of encoding:</h5><p id="p_type_encoding" class="card-text"></p>
+            <h5 class="card-title">Type of property:</h5><p id="p_type_property" class="card-text"></p>
+            <h5 class="card-title">Type of response:</h5><p id="p_type_response" class="card-text"></p>
+            <h5 class="card-title">Type of algorithm:</h5><p id="p_type_algorithm" class="card-text"></p>
+            <h5 class="card-title">Params:</h5><p id="p_params" class="card-text"></p>
+        </div>
+    </div>
+    <div id="seq_properties" class="card">
+        <h5 class="card-header">Performance</h5>    
+        <div class="card-body">
+          <h5 class="card-title">R score:</h5><p id="p_r_score" class="card-text"></p>
+          <h5 class="card-title">Pearson:</h5><p id="p_pearson" class="card-text"></p>
+          <h5 class="card-title">Pearson p value:</h5><p id="p_pearson_p" class="card-text"></p>
+          <h5 class="card-title">Spearman:</h5><p id="p_spearman" class="card-text"></p>
+          <h5 class="card-title">Spearman P value:</h5><p id="p_spearman_p" class="card-text"></p>
+          <h5 class="card-title">Kendalltau:</h5><p id="p_kendalltau" class="card-text"></p>
+          <h5 class="card-title">Kendalltau P value:</h5><p id="p_kendalltau_p" class="card-text"></p>
+        </div>
+    </div>
+  </div>
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Reality / prediction scatter plot</h5>    
+        <div class="card-body">
+        <div id="reality_prediction_graph"></div>
+        </div>
+    </div>
+    <div id="seq_properties" class="card">
+        <h5 class="card-header">Error scatter plot</h5>    
+        <div class="card-body">
+            <div id="error_graph"></div>
+        </div>
+    </div>
+  </div>
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Algorithm description</h5>    
+        <div class="card-body">
+        <p id="p_algorithm_desc"></p>
+        </div>
+    </div>
+  </div>
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Description of the results</h5>    
+        <div class="card-body">
+          <p>All performance measures to validate the training results of the models are based on the relationship between the actual data with respect to the values of predictions delivered by the model. As long as the values are closer to 1 it indicates a better performance for the model. The p-value associated with each measure indicates the significance with which the result is evaluated. </p>
+        </div>
+    </div>
+  </div>
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Download generated model (joblib)</h5>    
+        <div class="card text-center">
+        <div class="card-body">
+            <a id="p_download" target="_blank">
+                <i class="fa fa-download fa-5x" style="color:black"></i>
+            </a>
+            <br>
+            <br>
+            <p>It is possible export the created model, using joblib library. The mainly advantages to export model are to classifier new examples and using the model. Is important remember that, when you use a model, the new examples must have the sames features, in case that it is not, the model will not to work.</p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div id="results_c" class="card">
+  <h5 class="card-header text-center">Classification Results</h5>    
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Description of the fasta file</h5>    
+        <div class="card-body">
+        <h5 class="card-title">Number of sequences:</h5><p id="c_number_sequences" class="card-text"></p>
+        <h5 class="card-title">Average length of sequences:</h5><p id="c_average_length" class="card-text"></p>
+        </div>
+    </div>
+    <div id="seq_properties" class="card">
+        <h5 class="card-header">Model configuration parameters</h5>    
+        <div class="card-body">
+            <h5 class="card-title">Type of encoding:</h5><p id="c_type_encoding" class="card-text"></p>
+            <h5 class="card-title">Type of property:</h5><p id="c_type_property" class="card-text"></p>
+            <h5 class="card-title">Type of response:</h5><p id="c_type_response" class="card-text"></p>
+            <h5 class="card-title">Type of algorithm:</h5><p id="c_type_algorithm" class="card-text"></p>
+            <h5 class="card-title">Params:</h5><p id="c_params" class="card-text"></p>
+        </div>
+    </div>
+    <div id="seq_properties" class="card">
+        <h5 class="card-header">Performance</h5>    
+        <div class="card-body">
+            <h5 class="card-title">Accuracy:</h5><p id="c_accuracy" class="card-text"></p>
+          <h5 class="card-title">F1 score:</h5><p id="c_f1" class="card-text"></p>
+          <h5 class="card-title">Precision:</h5><p id="c_precision" class="card-text"></p>
+          <h5 class="card-title">Recall:</h5><p id="c_recall" class="card-text"></p>
+        </div>
+    </div>
+  </div>
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Sensitivity and specificity graph</h5>    
+        <div class="card-body">
+          <div id="fiabilidad"></div>
+          <div style="text-align: center;">
+            <p>Sensitivity and specificity are evaluated for each predictive model in order to determine the quality of the model. It is analyzed for each class and allows to indicate which are the classification tendencies. Better models will have higher rates of sensitivity and specificity, models overfitting or with clear trends for some class, will be reflected in this type of visualization and evaluation of classification modeling.</p>
+          </div>
+        </div>
+    </div>
+
+
+    <div id="seq_properties" class="card">
+        <h5 class="card-header">Confusion matrix</h5>    
+        <div class="card-body">
+          <div id="confusionMatrixGraph"></div>
+          <div style="text-align: center;">
+            <p>A Confusion Matrix is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one (in unsupervised learning it is usually called a matching matrix). Each row of the matrix represents the instances in a predicted class while each column represents the instances in an actual class (or vice versa). The name stems from the fact that it makes it easy to see if the system is confusing two classes (i.e. commonly mislabeling one as another).</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Learning curve</h5>    
+        <div class="card-body">
+          <div style="text-align: center;">
+            <img id="learning_curve" class="card-img-top" src="" alt="Card image cap" style="max-width: 50%;">
+            <div class="card-body">
+                <p class="card-text">A learning curve shows the validation and training score of an estimator for varying numbers of training samples. It is a tool to find out how much we benefit from adding more training data and whether the estimator suffers more from a variance error or a bias error. If both the validation score and the training score converge to a value that is too low with increasing size of the training set, we will not benefit much from more training data. In the following plot, the user can see an example: naive Bayes roughly converges to a low score.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Algorithm description</h5>    
+        <div class="card-body">
+        <p id="c_algorithm_desc"></p>
+        </div>
+    </div>
+    <div id="seq_properties" class="card">
+        <h5 class="card-header">Description of the results</h5>    
+        <div class="card-body">
+            <h5 class="card-title">Precision:</h5><p class="card-text">In the field of information retrieval, precision is the fraction of retrieved documents that are relevant to the query. Precision is used with recall, the percent of all relevant documents that is returned by the search. The two measures are sometimes used together in the F1 Score (or f-measure) to provide a single measurement for a system.</p>
+            <h5 class="card-title">Accuracy:</h5><p class="card-text">Accuracy is a statistical measure of how well a classification test correctly identifies or excludes a condition. That is, the accuracy is the proportion of true results (both true positives and true negatives) among the total number of cases examined. A value close to 100% indicates a high accuracy of the model, while values below 60% indicate that the classification delivers random elements and does not generate adequate confidence, so the model requires refinement or simply should be discarded.</p>
+            <h5 class="card-title">Recall:</h5><p class="card-text">In information retrieval, recall is the fraction of the relevant documents that are successfully retrieved. Precision is used with recall, the percent of all relevant documents that is returned by the search. The two measures are sometimes used together in the F1 Score (or f-measure) to provide a single measurement for a system.</p>
+            <h5 class="card-title">F1 score:</h5><p class="card-text">The F1 score can be interpreted as a weighted average of the precision and recall, where an F1 score reaches its best value at 1 and worst score at 0. The relative contribution of precision and recall to the F1 score are equal.</p>
+        </div>
+    </div>
+  </div>
+  <div id="allb" class="card-group">
+    <div id="seq_info" class="card">
+        <h5 class="card-header">Download generated model (joblib)</h5>    
+        <div class="card text-center">
+        <div class="card-body">
+            <a id="c_download" target="_blank">
+                <i class="fa fa-download fa-5x" style="color:black"></i>
+            </a>
+            <br>
+            <br>
+            <p>It is possible export the created model, using joblib library. The mainly advantages to export model are to classifier new examples and using the model. Is important remember that, when you use a model, the new examples must have the sames features, in case that it is not, the model will not to work.</p>
+        </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<script>
+  var encodings = [0, "One hot encoding", "Ordinal encoding", "Frequency of residues", "Physicochemical properties", "Digital signal", "Tape"]; 
+  var properties = ["Alpha-structure group", "Betha-structure_group", "Energetic_group", "Hydropathy_group", "Hydrophobicity_group", "Index_group", "Secondary_structure_properties_group", "Volume_group"]; 
+  var responses = ["Regresion", "Clasificacion"]; 
+  var predictions = [0, "AdaBoostRegressor", "BaggingRegressor", "DecisionTree", "GradientBoostingRegressor", "KNeighborsRegressor", "MLPRegressor", "NuSVR", "RandomForestRegressor", "SVR"]; 
+  var classifications = [0, "AdaBoostClassifier", "BaggingClassifier", "BernoulliNB", "DecisionTree", "GaussianNB", "GradientBoostingClassifier", "KNeighborsClassifier", "MLPClassifier", "NuSVC", "RandomForestClassifier", "SVC"]; 
+  var predictions_info = [0, "GB builds an additive model in a forward stage-wise fashion; it allows for the optimization of arbitrary differentiable loss functions. In each stage a regression tree is fit on the negative gradient of the given loss function.", "A Bagging regressor is an ensemble meta-estimator that fits base regressors each on random subsets of the original dataset and then aggregate their individual predictions (either by voting or by averaging) to form a final prediction. Such a meta-estimator can typically be used as a way to reduce the variance of a black-box estimator (e.g., a decision tree), by introducing randomization into its construction procedure and then making an ensemble out of it. This algorithm encompasses several works from the literature. When random subsets of the dataset are drawn as random subsets of the samples, then this algorithm is known as Pasting. If samples are drawn with replacement, then the method is known as Bagging. When random subsets of the dataset are drawn as random subsets of the features, then the method is known as Random Subspaces. Finally, when base estimators are built on subsets of both samples and features, then the method is known as Random Patches.", "As in the classification setting, the fit method will take as argument arrays X and y, only that in this case y is expected to have floating point values instead of integer values.", "GB builds an additive model in a forward stage-wise fashion; it allows for the optimization of arbitrary differentiable loss functions. In each stage a regression tree is fit on the negative gradient of the given loss function.", "Regression based on k-nearest neighbors. The target is predicted by local interpolation of the targets associated of the nearest neighbors in the training set.", "This model optimizes the squared-loss using LBFGS or stochastic gradient descent.", "Similar to NuSVC, for regression, uses a parameter nu to control the number of support vectors. However, unlike NuSVC, where nu replaces C, here nu replaces the parameter epsilon of epsilon-SVR.", "A random forest is a meta estimator that fits a number of classifying decision trees on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is always the same as the original input sample size but the samples are drawn with replacement if bootstrap=True (default).", "Epsilon-Support Vector Regression. The free parameters in the model are C and epsilon. The implementation is based on libsvm."]; 
+  var classifications_info = [0, "An AdaBoost classifier is a meta-estimator that begins by fitting a classifier on the original dataset and then fits additional copies of the classifier on the same dataset but where the weights of incorrectly classified instances are adjusted such that subsequent classifiers focus more on severe cases. n_estimators: The maximum number of estimators at which boosting is terminated. In case of perfect fit, the learning procedure is stopped early.If ‘SAMME.R’ then use the SAMME.R real boosting algorithm. base_estimator must support calculation of class probabilities. algorithm: If ‘SAMME’ then use the SAMME discrete boosting algorithm. The SAMME.R algorithm typically converges faster than SAMME, achieving a lower test error with fewer boosting iterations.", "A Bagging classifier is an ensemble meta-estimator that fits base classifiers each on random subsets of the original dataset and then aggregate their individual predictions (either by voting or by averaging) to form a final prediction. Such a meta-estimator can typically be used as a way to reduce the variance of a black-box estimator (e.g., a decision tree), by introducing randomization into its construction procedure and then making an ensemble out of it. n_estimators: The number of base estimators in the ensemble.", "Naive Bayes classifier for multivariate Bernoulli models. Naive Bayes methods are a set of supervised learning algorithms based on applying Bayes’ theorem with the “naive” assumption of conditional independence between every pair of features given the value of the class variable. Like MultinomialNB, this classifier is suitable for discrete data. The difference is that while MultinomialNB works with occurrence counts, BernoulliNB is designed for binary/boolean features. Without parameters.", "The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. criterion: The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features. splitter:The strategy used to choose the split at each node. Supported strategies are “best” to choose the best split and “random” to choose the best random split.", "Implements the Gaussian Naive Bayes algorithm for classification. The likelihood of the features is assumed to be Gaussian. Without parameters.", "GB builds an additive model in a forward stage-wise fashion; it allows for the optimization of arbitrary differentiable loss functions. In each stage n_classes_ regression trees are fit on the negative gradient of the binomial or multinomial deviance loss function. Binary classification is a particular case where only a single regression tree is induced. n_estimators: The number of boosting stages to perform. Gradient boosting is fairly robust to over-fitting so a large number usually results in better performance. criterion: The function to measure the quality of a split. Supported criteria are “friedman_mse” for the mean squared error with improvement score by Friedman, “mse” for mean squared error, and 'mae' for the mean absolute error. The default value of 'friedman_mse' is generally the best as it can provide a better approximation in some cases.", "KNeighborsClassifier implements learning based on the nearest neighbors of each query point, where is an integer value specified by the user. n_neighbors: Number of neighbors to use by default for kneighbors queries. algorithm :Algorithm used to compute the nearest neighbors: ‘ball_tree’ will use BallTree. ‘kd_tree’ will use KDTree. ‘brute’ will use a brute-force search. ‘auto’ will attempt to decide the most appropriate algorithm based on the values passed to fit method.", "This model optimizes the log-loss function using LBFGS or stochastic gradient descent. activation: Activation function for the hidden layer. ‘identity’, no-op activation, useful to implement linear bottleneck, returns f(x) = x. ‘logistic’, the logistic sigmoid function, returns f(x) = 1 / (1 + exp(-x)). ‘tanh’, the hyperbolic tan function, returns f(x) = tanh(x). ‘relu’, the rectified linear unit function, returns f(x) = max(0, x). solver : The solver for weight optimization. ‘lbfgs’ is an optimizer in the family of quasi-Newton methods. ‘sgd’ refers to stochastic gradient descent. ‘adam’ refers to a stochastic gradient-based optimizer proposed by Kingma, Diederik, and Jimmy Ba. learning_rate : Learning rate schedule for weight updates. ‘constant’ is a constant learning rate given by ‘learning_rate_init’. ‘invscaling’ gradually decreases the learning rate at each time step ‘t’ using an inverse scaling exponent of ‘power_t’. effective_learning_rate = learning_rate_init / pow(t, power_t). ‘adaptive’ keeps the learning rate constant to ‘learning_rate_init’ as long as training loss keeps decreasing. Each time two consecutive epochs fail to decrease training loss by at least tol, or fail to increase validation score by at least tol if ‘early_stopping’ is on, the current learning rate is divided by 5. n_layers_ : Number of layers.", "Nu-Support Vector Classification. Similar to SVC but uses a parameter to control the number of support vectors. The implementation is based on libsvm. kernel: Specifies the kernel type to be used in the algorithm. It must be one of ‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’ or a callable. If none is given, ‘rbf’ will be used. If a callable is given it is used to precompute the kernel matrix. gamma: Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’. Current default is ‘auto’ which uses 1 / n_features, if gamma='scale' is passed then it uses 1 / (n_features * X.std()) as value of gamma. The current default of gamma, ‘auto’, will change to ‘scale’ in version 0.22. ‘auto_deprecated’, a deprecated version of ‘auto’ is used as a default indicating that no explicit value of gamma was passed.", "A random forest is a meta estimator that fits a number of decision tree classifiers on various sub-samples of the dataset and uses averaging to improve the predictive accuracy and control over-fitting. The sub-sample size is always the same as the original input sample size but the samples are drawn with replacement if bootstrap=True (default). n_estimators: The number of trees in the forest. Changed in version 0.20: The default value of n_estimators will change from 10 in version 0.20 to 100 in version 0.22. criterion : The function to measure the quality of a split. Supported criteria are “gini” for the Gini impurity and “entropy” for the information gain. Note: this parameter is tree-specific.", "C-Support Vector Classification. The implementation is based on libsvm. The fit time complexity is more than quadratic with the number of samples which makes it hard to scale to dataset with more than a couple of 10000 samples. The multiclass support is handled according to a one-vs-one scheme. kernel : Specifies the kernel type to be used in the algorithm. It must be one of ‘linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’ or a callable. If none is given, ‘rbf’ will be used. If a callable is given it is used to pre-compute the kernel matrix from data matrices; that matrix should be an array of shape (n_samples, n_samples). gamma : Kernel coefficient for ‘rbf’, ‘poly’ and ‘sigmoid’. Current default is ‘auto’ which uses 1 / n_features, if gamma='scale' is passed then it uses 1 / (n_features * X.std()) as value of gamma. The current default of gamma, ‘auto’, will change to ‘scale’ in version 0.22. ‘auto_deprecated’, a deprecated version of ‘auto’ is used as a default indicating that no explicit value of gamma was passed"]; 
+  $('#results_p').hide();
+  $('#results_c').hide();
+  
+  var option = $('#exampleFormControlSelect3').val()    
+
+  $('#exampleFormControlSelect3').change(function(){
+    $("#exampleFormControlSelect3 option[value='none']").remove();
+    option = $('#exampleFormControlSelect3').val()
+    if(option == 0) {//prediccion
+    $('#exampleFormControlSelect44').show();
+    $('#exampleFormControlSelect55').hide();   
+  }
+  if(option == 1) {//clasificacion
+    $('#exampleFormControlSelect44').hide();
+    $('#exampleFormControlSelect55').show();   
+    }
+  });
+
+  $("#btn1").click(function(){
+    $('#results_p').hide();
+    $('#results_c').hide();
+    if($("#exampleFormControlSelect3").val() == "none"){
+      $('#error_alert').fadeIn();
+      $('#error_alert').attr('hidden', false)
+      setTimeout(function() {$('#error_alert').fadeOut();}, 3000)
+    }else{
+      var now = new Date().getTime();
+      var data = new FormData(document.getElementById("formuploadajax")); //your form ID
+      $('#wait').attr('hidden', false); 
+      $.ajax({
+          type: "POST",
+          //url: 'http://localhost/training/upload?time='+now,
+          url: 'http://peptipedia.cl/training/upload?time='+now,
+          data:  data,
+          enctype: 'multipart/form-data',
+          processData: false,  // tell jQuery not to process the data
+          contentType: false,   // tell jQuery not to set contentType
+          dataType: "json",
+          success: function(response){
+            if (response.upload == "ok"){
+              $('#wait').attr('hidden', false); 
+              if ($("#exampleFormControlSelect3").val() == "0"){
+                $.ajax({
+                //'url': "http://localhost/training/results",
+                'url': "http://peptipedia.cl/training/results",
+                'method': 'POST',
+                'data' : {"time": now, "encoding": $("#exampleFormControlSelect1").val(), "properties": $("#exampleFormControlSelect2").val(), "response": $("#exampleFormControlSelect3").val(), "algorithm": $("#exampleFormControlSelect4").val()}
+              }).done(function(data) { //PREDICCION
+                  if(data == '"error"'){
+                    $('#error_alert').fadeIn();
+                    $('#error_alert').attr('hidden', false)
+                    setTimeout(function() {$('#error_alert').fadeOut();}, 3000)
+                    $('#wait').attr('hidden', true); 
+                  }else{
+                    $('#results_p').show();
+                    $('#results_c').hide();
+                    $('#wait').attr('hidden', true); 
+                    $( "#p_number_sequences" ).html(data.total_sequences);
+                    $( "#p_average_length" ).html(data.mean_sequences);
+                    $( "#p_type_encoding" ).html(encodings[data.type_encoding]);
+                    $( "#p_type_property" ).html(properties[data.type_property]);
+                    $( "#p_type_response" ).html(responses[data.type_response]);
+                    $( "#p_type_algorithm" ).html(predictions[data.algorithm]);
+                    $( "#p_algorithm_desc" ).html(predictions_info[data.algorithm]);
+                    $.getJSON("jobs/service6/"+now+"/responseTraining.json", function(data){
+                      $( "#p_r_score" ).html(data.Performance.r_score);
+                      $( "#p_pearson" ).html(data.Performance.pearson.pearsonr);
+                      $( "#p_pearson_p" ).html(data.Performance.pearson.pvalue);
+                      $( "#p_spearman" ).html(data.Performance.spearman.spearmanr);
+                      $( "#p_spearman_p" ).html(data.Performance.spearman.pvalue);
+                      $( "#p_kendalltau" ).html(data.Performance.kendalltau.kendalltau);
+                      $( "#p_kendalltau_p" ).html(data.Performance.kendalltau.pvalue);
+                      $( "#p_params" ).html(JSON.stringify(data.Params).replace('{', '').replace('}', '').replace(',', '<br>'));
+                      var valuesPredict = data.Performance.predict_values;
+                      var valuesReal = data.Performance.real_values;
+                      var xValues = [];
+                      var errorGraphic = [];
+                      //generamos el array con las x...
+                      for (i=0;i<valuesReal.length; i++){
+                        xValues.push(i+1);
+                        errorGraphic[i] = valuesReal[i]-valuesPredict[i];
+                      }
+                      
+                      createGraphicData(valuesReal, valuesPredict, xValues);
+                      createGraphicDataOnlyTrace(errorGraphic, xValues);
+                    })
+                    var dlAnchorElem = document.getElementById('p_download');
+                    dlAnchorElem.setAttribute("href", "jobs/service6/"+now+"/modelExport.joblib");
+                  }
+              });
+              }else{
+                $.ajax({
+                //'url': "http://localhost/training/results",
+                'url': "http://peptipedia.cl/training/results",
+                'method': 'POST',
+                'data' : {"time": now, "encoding": $("#exampleFormControlSelect1").val(), "properties": $("#exampleFormControlSelect2").val(), "response": $("#exampleFormControlSelect3").val(), "algorithm": $("#exampleFormControlSelect5").val()}
+              }).done(function(data) {  //CLASIFICACION
+                  if (data == '"error"'){
+                    $('#error_alert').fadeIn();
+                    $('#error_alert').attr('hidden', false)
+                    setTimeout(function() {$('#error_alert').fadeOut();}, 3000)
+                    $('#wait').attr('hidden', true); 
+                  }else{
+                    $('#results_p').hide();
+                    $('#results_c').show();
+                    $('#wait').attr('hidden', true); 
+                    $( "#c_number_sequences" ).html(data.total_sequences);
+                    $( "#c_average_length" ).html(data.mean_sequences);
+                    $( "#c_type_encoding" ).html(encodings[data.type_encoding]);
+                    $( "#c_type_property" ).html(properties[data.type_property]);
+                    $( "#c_type_response" ).html(responses[data.type_response]);
+                    $( "#c_type_algorithm" ).html(predictions[data.algorithm]);
+                    $( "#c_algorithm_desc" ).html(classifications_info[data.algorithm]);
+                    $("#learning_curve").attr("src", "jobs/service6/"+now+"/curveLearning.svg");
+                    $.getJSON("jobs/service6/"+now+"/responseTraining.json", function(data){
+                      $( "#c_accuracy" ).html(data.Performance.accuracy);
+                      $( "#c_f1" ).html(data.Performance.f1);
+                      $( "#c_precision" ).html(data.Performance.precision);
+                      $( "#c_recall" ).html(data.Performance.recall);
+                      $( "#c_params" ).html(JSON.stringify(data.Params).replace('{', '').replace('}', '').replace(',', '<br>'));
+
+                      //hacemos el grafico de fiabilidad y bakanosidad
+                      var xData = data.matrixConfusionResponse.header;
+
+                      var trace1 = {
+                        x: xData,
+                        y: data.matrixConfusionResponse.specificity,
+                        name: 'Specificity',
+                        type: 'bar'
+                      };
+
+                      var trace2 = {
+                        x: xData,
+                        y: data.matrixConfusionResponse.sensitivity,
+                        name: 'Sensitivity',
+                        type: 'bar'
+                      };
+
+                      var dataLa = [trace1, trace2];
+
+                      var layout = {
+                        barmode: 'group',
+
+                        yaxis:{
+                          title:'Values in %'
+                        },
+
+                        xaxis:{
+                          title:'Class in dataset'
+                        }
+
+                      };
+
+                      Plotly.newPlot('fiabilidad', dataLa, layout);
+
+                      //hacemos el heat map de la matriz de confusion
+                      var colorscaleValue = [
+                        [0, '#3D9970'],
+                        [1, '#001f3f']
+                      ];
+                      var dataHeat = [
+                        {
+                          z: data.matrixConfusionResponse.matrix,
+                          x: xData,
+                          y: xData,
+                          type: 'heatmap',
+                          colorscale: colorscaleValue
+                        }
+                      ];
+
+                      var layout = {
+
+                        annotations: [],
+                        xaxis: {
+                          title: 'Prediction Values',
+                        }
+
+                      };
+
+                      for ( var i = 0; i < xData.length; i++ ) {
+                        for ( var j = 0; j < xData.length; j++ ) {
+                          var currentValue = data.matrixConfusionResponse.matrix[i][j];
+                          if (currentValue != 0.0) {
+                            var textColor = 'white';
+                          }else{
+                            var textColor = 'black';
+                          }
+                          var result = {
+                            xref: 'x1',
+                            yref: 'y1',
+                            x: xData[j],
+                            y: xData[i],
+                            text: data.matrixConfusionResponse.matrix[i][j],
+                            font: {
+                              family: 'Arial',
+                              size: 16,
+                              color: 'rgb(50, 171, 96)'
+                            },
+                            showarrow: false,
+                            font: {
+                              color: textColor
+                            }
+                          };
+                          layout.annotations.push(result);
+                        }
+                      }
+
+                      Plotly.newPlot('confusionMatrixGraph', dataHeat, layout);
+                    })
+                    var dlAnchorElem = document.getElementById('c_download');
+                    dlAnchorElem.setAttribute("href", "jobs/service6/"+now+"/modelExport.joblib");
+                  }
+              });
+              }
+            }
+          }
+      });
+    }
+    
+
+
+
+    
+});
+  function createGraphicData(valuesReal, valuesPredict, xValues){
+
+	var trace1 = {
+		x: valuesReal,
+	  y: valuesPredict,
+	  mode: 'markers',
+	  type: 'scatter',
+    marker: {
+      color: 'rgb(219, 64, 82)',
+      size: 12
+    }
+	};
+
+  var layout = {
+    xaxis:{
+      title: "Real Values"
+    },
+
+    yaxis:{
+      title: "Predicted Values"
+    }
+  }
+	var data = [trace1];
+
+	Plotly.newPlot('reality_prediction_graph', data, layout);
+
+}
+
+//funcion para cargar el grafico
+function createGraphicDataOnlyTrace(values, xValues){
+
+	//formamos la trace...
+	var trace2 = {
+		x: values,
+		name: 'control',
+		autobinx: true,
+		histnorm: "count",
+		marker: {
+			color: "rgba(128, 0, 0, 1)",
+			 line: {
+				color:  "rgba(128, 0, 0, 1)",
+				width: 1
+			}
+		},
+
+		type: "histogram"
+	};
+/*
+	var trace2 = {
+		x: xValues,
+		  y: values,
+		  mode: 'markers',
+		name: 'Error Values',
+		line: {
+		      line: {shape: 'spline'}
+    		},
+		marker: {
+      color: 'rgb(219, 64, 82)',
+      size: 12
+    }
+	};
+*/
+	var data = [trace2];
+
+	Plotly.newPlot('error_graph', data);
+
+}
+
+</script>

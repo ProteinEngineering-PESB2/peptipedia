@@ -1,0 +1,457 @@
+<link href="css/bstreeview.css" rel="stylesheet">
+
+<div id="all" class="card">
+	<div class="row">
+		<div class="col-sm-12">
+			<h5 class="card-header">Secuence information</h5>
+			<div class="card-body">
+			{{#each peptides}}<h5 class="card-title">Sequence:</h5><p class="card-text">{{'sequence'}}</p>{{/each}}
+			{{#each peptides}}<h5 class="card-title">Sequence ID:</h5><p class="card-text">{{'id_sequence'}}</p>{{/each}}
+			{{#each peptides}}<h5 class="card-title">Length:</h5><p class="card-text">{{'length'}}</p>{{/each}}
+			{{#each peptides}}<h5 class="card-title">Molecular weight:</h5><p class="card-text">{{'molecular_weigth'}}</p>{{/each}}
+			{{#each peptides}}<h5 class="card-title">Isoelectric:</h5><p class="card-text">{{'isoelectric_point'}}</p>{{/each}}
+			{{#each peptides}}{{#if peptide_name}}<h5 class="card-title">Peptide name:</h5><p class="card-text">{{'peptide_name'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}<h5 class="card-title">Charge:</h5><p class="card-text">{{'charge'}}</p>{{/each}}
+			{{#each peptides}}<h5 class="card-title">Charge density:</h5><p class="card-text">{{'charge_density'}}</p>{{/each}}
+			{{#each peptides}}<h5 class="card-title">Is modified:</h5><p class="card-text">{{'is_modify'}}</p>{{/each}}
+			</div>
+      	</div>
+		<div class="card-group col-sm-12">
+			<div class="card">
+				<h5 class="card-header">Properties information</h5>
+				<div class="card-body">
+				{{#each peptides}}<h5 class="card-title">Inestability:</h5><p class="card-text">{{'instability_index'}}</p>{{/each}}
+				{{#each peptides}}<h5 class="card-title">Aromaticity:</h5><p class="card-text">{{'aromaticity'}}</p>{{/each}}
+				{{#each peptides}}<h5 class="card-title">Aliphatic index:</h5><p class="card-text">{{'aliphatic_index'}}</p>{{/each}}
+				{{#each peptides}}<h5 class="card-title">Hydrophobic ratio:</h5><p class="card-text">{{'hydrophobic_ratio'}}</p>{{/each}}
+				{{#each peptides}}<h5 class="card-title">Hydrophobicity profile:</h5><p class="card-text">{{'hydrophobicity_profile'}}</p>{{/each}}
+				{{#each peptides}}<h5 class="card-title">Hydrophobic profile:</h5><p class="card-text">{{'hydrophobic_profile'}}</p>{{/each}}
+				{{#each peptides}}<h5 class="card-title">Momment:</h5><p class="card-text">{{'momment'}}</p>{{/each}}
+				</div>	
+			</div>
+			<div class="card">
+				<h5 class="card-header">Taxonomy</h5>
+				<div class="card-body">
+				{{#each peptides}}{{#if organism_value}}<h5 class="card-title">Organism:</h5><p class="card-text">{{'organism_value'}}</p>{{/if}}{{/each}}
+				{{#each peptides}}{{#if gene_name}}<h5 class="card-title">Gene:</h5><p class="card-text">{{'gene_name'}}</p>{{/if}}{{/each}}
+				{{#each peptides}}{{#if taxonomy}}<h5 class="card-title">taxonomy:</h5><p class="card-text">{{'taxonomy'}}</p>{{/if}}{{/each}}
+				{{#each peptides}}{{#if formula}}<h5 class="card-title">formula:</h5><p class="card-text">{{'formula'}}</p>{{/if}}{{/each}}
+				</div>
+			</div>
+		</div>
+
+		  <div class="col-sm-12" id="otherInfo">
+			<h5 class="card-header">Other information</h5>
+			<div class="card-body">
+			{{#each peptides}}{{#if Virus_antiviral}}<h5 id="Virus_antiviral" class="card-title">Virus_antiviral:</h5><p class="card-text">{{'Virus_antiviral'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if Family_virus}}<h5 id="Family_virus" class="card-title">Family_virus:</h5><p class="card-text">{{'Family_virus'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if Source_viral}}<h5 id="Source_viral" class="card-title">Source_viral:</h5><p class="card-text">{{'Source_viral'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if IC50_antiviral}}<h5 id="IC50_antiviral" class="card-title">IC50_antiviral:</h5><p class="card-text">{{'IC50_antiviral'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if unit_IC50_antiviral}}<h5 id="unit_IC50_antiviral" class="card-title">unit_IC50_antiviral:</h5><p class="card-text">{{'unit_IC50_antiviral'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if ic50_anti_hipertensive}}<h5 id="ic50_anti_hipertensive" class="card-title">ic50_anti_hipertensive:</h5><p class="card-text">{{'ic50_anti_hipertensive'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if source_anti_hipertensive}}<h5 id="source_anti_hipertensive" class="card-title">source_anti_hipertensive:</h5><p class="card-text">{{'source_anti_hipertensive'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if tumor}}<h5 id="tumor" class="card-title">Target-tumor:</h5><p class="card-text">{{'Target-tumor'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if IC50_for_antiHIV}}<h5 id="IC50_for_antiHIV" class="card-title">IC50_for_antiHIV:</h5><p class="card-text">{{'IC50_for_antiHIV'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if IC50_for_antiHIV_unit}}<h5 id="IC50_for_antiHIV_unit" class="card-title">IC50_for_antiHIV_unit:</h5><p class="card-text">{{'IC50_for_antiHIV_unit'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if PMID_identifer}}<h5 id="PMID_identifer" class="card-title">PMID_identifer:</h5><p class="card-text">{{'PMID_identifer'}}</p>{{/if}}{{/each}}
+			</div>
+	  	</div>
+	  	<div class="col-sm-12">
+			<h5 class="card-header">Activities tree</h5>
+			<div class="card-body">
+			<div id="tree"></div>
+			</div>
+	  	</div>
+		<div class="col-sm-12">
+			<h5 class="card-header">Frequency dictionary data</h5>
+			<div class="card-body">
+			<div class="col-sm-12" id="pie1"></div>
+			<p hidden id="errorPie">This sequence has no graph</p>
+			</div>
+	  	</div>
+		<div class="card-group col-sm-12">
+			<div class="card">
+				<h5 class="card-header">Databases where it was extracted</h5>
+				<div class="card-body">
+					{{#each peptides}}{{#if in_ADP}}<h5 id="h_in_ADP" class="card-title">in_ADP:</h5><p id="p_in_ADP" class="card-text">{{found_in in_ADP}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_AHTPDB}}<h5 id="h_in_AHTPDB" class="card-title">in_AHTPDB:</h5><p id="p_in_AHTPDB" class="card-text">{{found_in in_AHTPDB}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_AllergenOnline}}<h5 id="h_in_AllergenOnline" class="card-title">in_AllergenOnline:</h5><p id="p_in_AllergenOnline" class="card-text">{{found_in in_AllergenOnline}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_AntiAngioPred}}<h5 id="h_in_AntiAngioPred" class="card-title">in_AntiAngioPred:</h5><p id="p_in_AntiAngioPred" class="card-text">{{found_in in_AntiAngioPred}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_AntiTbPdb}}<h5 id="h_in_AntiTbPdb" class="card-title">in_AntiTbPdb:</h5><p id="p_in_AntiTbPdb" class="card-text">{{found_in in_AntiTbPdb}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_ArachnoServer}}<h5 id="h_in_ArachnoServer" class="card-title">in_ArachnoServer:</h5><p id="p_in_ArachnoServer" class="card-text">{{found_in in_ArachnoServer}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_AVPdb}}<h5 id="h_in_AVPdb" class="card-title">in_AVPdb:</h5><p id="p_in_AVPdb" class="card-text">{{found_in in_AVPdb}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_BaAMPs}}<h5 id="h_in_BaAMPs" class="card-title">in_BaAMPs:</h5><p id="p_in_BaAMPs" class="card-text">{{found_in in_BaAMPs}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_BioDaDpep}}<h5 id="h_in_BioDaDpep" class="card-title">in_BioDaDpep:</h5><p id="p_in_BioDaDpep" class="card-text">{{found_in in_BioDaDpep}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_BIOPEP}}<h5 id="h_in_BIOPEP" class="card-title">in_BIOPEP:</h5><p id="p_in_BIOPEP" class="card-text">{{found_in in_BIOPEP}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_BrainPeps}}<h5 id="h_in_BrainPeps" class="card-title">in_BrainPeps:</h5><p id="p_in_BrainPeps" class="card-text">{{found_in in_BrainPeps}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_CAMP}}<h5 id="h_in_CAMP" class="card-title">in_CAMP:</h5><p id="p_in_CAMP" class="card-text">{{found_in in_CAMP}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_ConoServer}}<h5 id="h_in_ConoServer" class="card-title">in_ConoServer:</h5><p id="p_in_ConoServer" class="card-text">{{found_in in_ConoServer}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_CPPsite}}<h5 id="h_in_CPPsite" class="card-title">in_CPPsite:</h5><p id="p_in_CPPsite" class="card-text">{{found_in in_CPPsite}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_DADP}}<h5 id="h_in_DADP" class="card-title">in_DADP:</h5><p id="p_in_DADP" class="card-text">{{found_in in_DADP}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_DBAASP}}<h5 id="h_in_DBAASP" class="card-title">in_DBAASP:</h5><p id="p_in_DBAASP" class="card-text">{{found_in in_DBAASP}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_DRAMP}}<h5 id="h_in_DRAMP" class="card-title">in_DRAMP:</h5><p id="p_in_DRAMP" class="card-text">{{found_in in_DRAMP}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_Erop-Moscow}}<h5 id="h_in_Erop-Moscow" class="card-title">in_Erop-Moscow:</h5><p id="p_in_Erop-Moscow" class="card-text">{{found_in in_Erop-Moscow}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_Hemolytik}}<h5 id="h_in_Hemolytik" class="card-title">in_Hemolytik:</h5><p id="p_in_Hemolytik" class="card-text">{{found_in in_Hemolytik}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_HIPdb}}<h5 id="h_in_HIPdb" class="card-title">in_HIPdb:</h5><p id="p_in_HIPdb" class="card-text">{{found_in in_HIPdb}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_LAMP2}}<h5 id="h_in_LAMP2" class="card-title">in_LAMP2:</h5><p id="p_in_LAMP2" class="card-text">{{found_in in_LAMP2}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_NeuroPedia}}<h5 id="h_in_NeuroPedia" class="card-title">in_NeuroPedia:</h5><p id="p_in_NeuroPedia" class="card-text">{{found_in in_NeuroPedia}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_PhytAMP}}<h5 id="h_in_PhytAMP" class="card-title">in_PhytAMP:</h5><p id="p_in_PhytAMP" class="card-text">{{found_in in_PhytAMP}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_quorum-peps}}<h5 id="h_in_quorum-peps" class="card-title">in_quorum-peps:</h5><p id="p_in_quorum-peps" class="card-text">{{found_in in_quorum-peps}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_SATPdb}}<h5 id="h_in_SATPdb" class="card-title">in_SATPdb:</h5><p id="p_in_SATPdb" class="card-text">{{found_in in_SATPdb}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_SPdb}}<h5 id="h_in_SPdb" class="card-title">in_SPdb:</h5><p id="p_in_SPdb" class="card-text">{{found_in in_SPdb}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_TumorHoPe}}<h5 id="h_in_TumorHoPe" class="card-title">in_TumorHoPe:</h5><p id="p_in_TumorHoPe" class="card-text">{{found_in in_TumorHoPe}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_YADAMP}}<h5 id="h_in_YADAMP" class="card-title">in_YADAMP:</h5><p id="p_in_YADAMP" class="card-text">{{found_in in_YADAMP}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_uniprot}}<h5 id="h_in_uniprot" class="card-title">in_uniprot:</h5><p id="p_in_uniprot" class="card-text">{{found_in in_uniprot}}</p>{{/if}}{{/each}}
+					{{#each peptides}}{{#if in_BACTIBASE}}<h5 id="h_in_BACTIBASE" class="card-title">in_BACTIBASE:</h5><p id="p_in_BACTIBASE" class="card-text">{{found_in in_BACTIBASE}}</p>{{/if}}{{/each}}	
+				</div>
+			</div>
+			<div class="card">
+				<h5 class="card-header">Codes</h5>
+				<div class="card-body">
+					{{#each peptides}}{{#if uniprot_code}}<h5 class="card-title">UNIPROT Code:</h5><p class="card-text"><a id="link_uniprot" href="https://www.uniprot.org/uniprot/{{codes uniprot_code}}" target="_blank">{{codes uniprot_code}}</a></p>{{else}}<h5 class="card-title">UNIPROT Code:</h5><p class="card-text">Not Found</p>{{/if}}{{/each}}
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<script src="js/bstreeview.js"></script>
+<script>
+	if($('#Virus_antiviral').val() == undefined && $('#Family_virus').val() == undefined && 
+	$('#Source_viral').val() == undefined && $('#IC50_antiviral').val() == undefined && 
+	$('#unit_IC50_antiviral').val() == undefined && $('#ic50_anti_hipertensive').val() == undefined && 
+	$('#source_anti_hipertensive').val() == undefined && $('#tumor').val() == undefined && 
+	$('#IC50_for_antiHIV').val() == undefined && $('#IC50_for_antiHIV_unit').val() == undefined && 
+	$('#PMID_identifer').val() == undefined){
+	$('#otherInfo').attr('hidden', true);  
+	}
+
+//
+	const urlParams = new URLSearchParams(window.location.search);
+	$.getJSON("attachment/charts/frequency_dictionary_data.json", function(json){
+			if (json[urlParams.get('id_sec')] != undefined){
+				var data = [{
+				values: json[urlParams.get('id_sec')],
+				labels: ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V'],
+				type: 'pie'
+				}];
+				Plotly.newPlot('pie1', data);
+			}
+			else{
+				$("#errorPie").attr('hidden', false);  
+			}	
+        }).fail(function(){
+            console.log("An error has occurred.");
+        });
+
+
+	var json = [
+				{	
+					id: "Propeptide",
+					{{#each peptides}}text: "{{tree Propeptide 'Propeptide'}}{{/each}}",
+				},
+				{
+					id: "Signal",
+					{{#each peptides}}text: "{{tree Signal 'Signal'}}{{/each}}",
+				},
+				{
+					id: "Transit",
+					{{#each peptides}}text: "{{tree Transit 'Transit'}}{{/each}}",
+				},
+				{
+					id: "Sensorial",
+					{{#each peptides}}text: "{{tree Sensorial 'Sensorial'}}{{/each}}",
+					nodes: [
+						{
+							id: "Quorumsensing",
+							{{#each peptides}}text: "{{tree Quorum sensing 'Quorum sensing'}}{{/each}}",
+						},
+						{
+							id: "Chemotactic",
+							{{#each peptides}}text: "{{tree Chemotactic 'Chemotactic'}}{{/each}}",
+						},
+						{
+							id: "Cellcellcommunication",
+							{{#each peptides}}text: "{{tree Cell-cell communication 'Cell-cell communication'}}{{/each}}",
+						},
+						{
+							id: "Defense",
+							{{#each peptides}}text: "{{tree Defense 'Defense'}}{{/each}}",
+						}
+					]
+				},
+                {
+					id: "Drugdeliveryvehicle",
+					{{#each peptides}}text: "{{tree Drug delivery vehicle 'Drug delivery vehicle'}}{{/each}}",
+					nodes: [
+						{
+							id: "Cellpenetrating",
+							{{#each peptides}}text: "{{tree Cell-penetrating 'Cell-penetrating'}}{{/each}}",
+						},
+						{
+							id: "Bloodbrainbarriercrossing",
+							{{#each peptides}}text: "{{tree Blood-brain barrier crossing 'Blood-brain barrier crossing'}}{{/each}}",
+						}
+					]
+				},
+                {
+					id: "Therapeutic",
+					{{#each peptides}}text: "{{tree Therapeutic 'Therapeutic'}}{{/each}}",
+					nodes: [
+						{
+							id: "Antimicrobial",
+							{{#each peptides}}text: "{{tree Antimicrobial 'Antimicrobial'}}{{/each}}",
+                            nodes: [
+                                {
+                                    id: "Antiviral",
+                                    {{#each peptides}}text: "{{tree Antiviral 'Antiviral'}}{{/each}}",
+                                    nodes: [
+                                        {
+                                            id: "AntiHIV",
+                                            {{#each peptides}}text: "{{tree Anti HIV 'Anti HIV'}}{{/each}}",
+                                        }, 
+                                        {
+                                            id: "AntiHSV",
+                                            {{#each peptides}}text: "{{tree Anti HSV 'Anti HSV'}}{{/each}}",
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    id: "Antibacterialantibiotic",
+                                    {{#each peptides}}text: "{{tree Antibacterial/antibiotic 'Antibacterial/antibiotic'}}{{/each}}",
+                                    nodes: [
+                                        {
+                                            id: "Antibiofilm",
+                                            {{#each peptides}}text: "{{tree Antibiofilm 'Antibiofilm'}}{{/each}}",
+                                        }, 
+                                        {
+                                            id: "AntiGramP",
+                                            {{#each peptides}}text: "{{tree Anti Gram ('+') 'Anti Gram (+)'}}{{/each}}",
+                                            nodes: [
+                                                {
+                                                    id: "Antilisterial",
+                                                    {{#each peptides}}text: "{{tree Antilisterial 'Antilisterial'}}{{/each}}",
+                                                }, 
+                                                {
+                                                    id: "AntiMRSA",
+                                                    {{#each peptides}}text: "{{tree Anti MRSA 'Anti MRSA'}}{{/each}}",
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            id: "AntiGramL",
+                                            {{#each peptides}}text: "{{tree Anti Gram ('-') 'Anti Gram (-)'}}{{/each}}",
+                                        },
+                                        {
+                                            id: "AntiTB",
+                                            {{#each peptides}}text: "{{tree Anti TB 'Anti TB'}}{{/each}}",
+                                        },
+                                        {
+                                            id: "Bacteriocins",
+                                            {{#each peptides}}text: "{{tree Bacteriocins 'Bacteriocins'}}{{/each}}",
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    id: "Antifungal",
+                                    {{#each peptides}}text: "{{tree Antifungal 'Antifungal'}}{{/each}}",
+                                    nodes: [
+                                        {
+                                            id: "AntiYeast",
+                                            {{#each peptides}}text: "{{tree Anti Yeast 'Anti Yeast'}}{{/each}}",
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    id: "Antiprotozoal",
+                                    {{#each peptides}}text: "{{tree Antiprotozoal 'Antiprotozoal'}}{{/each}}",
+                                    nodes: [
+                                        {
+                                            id: "Antimalarialantiplasmodial",
+                                            {{#each peptides}}text: "{{tree Antimalarial/antiplasmodial 'Antimalarial/antiplasmodial'}}{{/each}}",
+                                        }
+                                    ]
+                                }, 
+                                {
+                                    id: "Anurodefense",
+                                    {{#each peptides}}text: "{{tree Anuro defense 'Anuro defense'}}{{/each}}",
+                                }
+                                
+                            ]
+						}, 
+						{
+							id: "Toxic",
+							{{#each peptides}}text: "{{tree Toxic 'Toxic'}}{{/each}}",
+                            nodes: [
+                                {
+                                    id: "Antiparasitic",
+                                    {{#each peptides}}text: "{{tree Antiparasitic 'Antiparasitic'}}{{/each}}",
+                                },
+                                {
+                                    id: "Cytolytic",
+                                    {{#each peptides}}text: "{{tree Cytolytic 'Cytolytic'}}{{/each}}",
+                                    nodes: [
+                                        {
+                                            id: "Hemolytic",
+                                            {{#each peptides}}text: "{{tree Hemolytic 'Hemolytic'}}{{/each}}",
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: "Insecticidal",
+                                    {{#each peptides}}text: "{{tree Insecticidal 'Insecticidal'}}{{/each}}",
+                                }
+
+                            ]
+						},
+                        {
+							id: "Metabolic",
+							{{#each peptides}}text: "{{tree Metabolic 'Metabolic'}}{{/each}}",
+                            nodes: [
+                                {
+                                    id: "Antihypertensive",
+                                    {{#each peptides}}text: "{{tree Antihypertensive 'Antihypertensive'}}{{/each}}",
+                                },
+                                {
+                                    id: "AntiDiabetic",
+                                    {{#each peptides}}text: "{{tree Anti Diabetic 'Anti Diabetic'}}{{/each}}",
+                                },
+                                {
+                                    id: "Antiinflammatory",
+                                    {{#each peptides}}text: "{{tree Antiinflammatory 'Antiinflammatory'}}{{/each}}",
+                                },
+                                {
+                                    id: "Enzymeinhibitor",
+                                    {{#each peptides}}text: "{{tree Enzyme inhibitor 'Enzyme inhibitor'}}{{/each}}",
+                                },
+                                {
+                                    id: "Regulatory",
+                                    {{#each peptides}}text: "{{tree Regulatory 'Regulatory'}}{{/each}}",
+                                },
+                                {
+                                    id: "AntiAngiogenic",
+                                    {{#each peptides}}text: "{{tree Anti Angiogenic 'Anti Angiogenic'}}{{/each}}",
+                                }
+                            ]
+						},
+                        {
+							id: "Anticancer",
+							{{#each peptides}}text: "{{tree Anticancer 'Anticancer'}}{{/each}}",
+                            nodes: [
+                                {
+                                    id: "Antitumour",
+                                    {{#each peptides}}text: "{{tree Antitumour 'Antitumour'}}{{/each}}",
+                                }
+                            ]
+						},
+                        {
+							id: "Bioactive",
+							{{#each peptides}}text: "{{tree Bioactive 'Bioactive'}}{{/each}}",
+                            nodes: [
+                                {
+                                    id: "Antioxidant",
+                                    {{#each peptides}}text: "{{tree Antioxidant 'Antioxidant'}}{{/each}}",
+                                }
+                            ]
+						}
+					]
+				},
+                {
+					id: "Otheractivity",
+					{{#each peptides}}text: "{{tree Other activity 'Other activity'}}{{/each}}",
+					nodes: [
+						{
+							id: "Cancercell",
+							{{#each peptides}}text: "{{tree Cancer cell 'Cancer cell'}}{{/each}}",
+						},
+						{
+							id: "Mammalliancell",
+							{{#each peptides}}text: "{{tree Mammallian cell 'Mammallian cell'}}{{/each}}",
+						},
+                        {
+							id: "Proteolytic",
+							{{#each peptides}}text: "{{tree Proteolytic 'Proteolytic'}}{{/each}}",
+						},
+                        {
+							id: "Surfaceimmobilized",
+							{{#each peptides}}text: "{{tree Surface-immobilized 'Surface-immobilized'}}{{/each}}",
+						}
+					]
+				},
+                {
+					id: "Neurologicalactivity",
+					{{#each peptides}}text: "{{tree Neurological activity 'Neurological activity'}}{{/each}}",
+					nodes: [
+						{
+							id: "Neuropeptide",
+							{{#each peptides}}text: "{{tree Neuropeptide 'Neuropeptide'}}{{/each}}",
+						},
+						{
+							id: "Antinociceptive",
+							{{#each peptides}}text: "{{tree Antinociceptive 'Antinociceptive'}}{{/each}}",
+						},
+                        {
+							id: "Brainpeptide",
+							{{#each peptides}}text: "{{tree Brain peptide 'Brain peptide'}}{{/each}}",
+						}
+					]
+				},
+                 {
+					id: "Immunologicalactivity",
+					{{#each peptides}}text: "{{tree Immunological activity 'Immunological activity'}}{{/each}}",
+					nodes: [
+						{
+							id: "Allergen",
+							{{#each peptides}}text: "{{tree Allergen 'Allergen'}}{{/each}}",
+						},
+                        {
+							id: "Immunomodulatory",
+							{{#each peptides}}text: "{{tree Immunomodulatory 'Immunomodulatory'}}{{/each}}",
+                            nodes: [
+                                {
+                                    id: "Woundhealing",
+                                    {{#each peptides}}text: "{{tree Wound healing 'Wound healing'}}{{/each}}",
+                                }
+                            ]
+						}
+					]
+				},
+                 {
+					id: "nonactivity",
+					{{#each peptides}}text: "{{tree non_activity 'non_activity'}}{{/each}}",
+				}
+			];
+	
+			$('#tree').bstreeview({
+				data: json,
+                expandIcon: 'fa fa-angle-down fa-fw',
+                collapseIcon: 'fa fa-angle-right fa-fw',
+                indent: 1.25,
+                parentsMarginLeft: '1.25rem',
+                openNodeLinkOnNewTab: true
+			});
+			
+			
+			dbs = ['in_ADP', 'in_AHTPDB', 'in_AllergenOnline', 'in_AntiAngioPred', 'in_AntiTbPdb', 'in_ArachnoServer', 'in_AVPdb', 'in_BaAMPs', 'in_BioDaDpep', 'in_BIOPEP', 'in_BrainPeps', 'in_CAMP', 'in_ConoServer', 'in_CPPsite', 'in_DADP', 'in_DBAASP', 'in_DRAMP', 'in_Erop-Moscow', 'in_Hemolytik', 'in_HIPdb', 'in_LAMP2', 'in_NeuroPedia', 'in_PhytAMP', 'in_quorum-peps', 'in_SATPdb', 'in_SPdb', 'in_TumorHoPe', 'in_YADAMP', 'in_uniprot', 'in_BACTIBASE']
+			for (i = 0; i < dbs.length; i++) {
+				if($('#p_'+dbs[i]).text() == "Not found"){
+					$('#p_'+dbs[i]).hide();
+					$('#h_'+dbs[i]).hide();
+				}
+			}
+			var i;
+			if($('#link_uniprot').text() == "Not Found"){				
+					$('#link_uniprot').contents().unwrap();
+			}
+			var ids = ['Propeptide', 'Signal', 'Transit', 'Antimicrobial', 'Antihypertensive', 'Allergen', 'AntiAngiogenic', 'Quorumsensing', 'Antiviral', 'Antibiofilm', 'AntiGramP', 'AntiGramL', 'Antibacterialantibiotic', 'Antifungal', 'Antiparasitic', 'Antitumour', 'Antiprotozoal', 'Cellpenetrating', 'Neuropeptide', 'Sensorial', 'Bloodbrainbarriercrossing', 'AntiDiabetic', 'Toxic', 'Chemotactic', 'Antilisterial', 'Hemolytic', 'Cytolytic', 'Cancercell', 'Insecticidal', 'AntiHIV', 'Antiinflammatory', 'Mammalliancell', 'Woundhealing', 'AntiHSV', 'Enzymeinhibitor', 'Antinociceptive', 'Proteolytic', 'Immunomodulatory', 'Drugdeliveryvehicle', 'Cellcellcommunication', 'AntiTB', 'Anurodefense', 'Therapeutic', 'Otheractivity', 'Neurologicalactivity', 'Immunologicalactivity', 'Metabolic', 'Antimalarialantiplasmodial', 'Anticancer', 'Regulatory', 'AntiYeast', 'AntiMRSA', 'Bacteriocins', 'Bioactive', 'Antioxidant', 'Defense', 'Brainpeptide', 'Surfaceimmobilized', 'nonactivity']
+			$( document ).ready(function() {
+				for (i = 0; i < ids.length; i++) {
+					if($('#'+ids[i]).text() == false || $('#'+ids[i]).text() == "false"){
+						$('#'+ids[i]).hide();
+					}else{
+						$('#'+ids[i]).click();
+					}	
+				}
+			});
+			
+</script>

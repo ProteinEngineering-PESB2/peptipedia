@@ -1,0 +1,346 @@
+<link rel="stylesheet" href="/css/buttons.dataTables.min.css">
+<div class="jumbotron mt-4">
+    <h1 class="display-4">Database integration</h1>
+    <br>
+    <p class="lead">We generate our platform's database system, integrating the information from 30 previously reported repositories or tools. First, we process the information individually for each of the included systems, downloading it from the tools and generating Pythons scripts to process them. Additionally, information on the peptide sequences' characteristics is added, and fields are added that indicate the origin or where the peptide is reported. Finally, we add information on physicochemical and thermodynamic properties using the ModLamp library. It is essential to mention that we dynamically update our records every month, adding new records when appropriate.</p>
+</div>
+<div id="all" class="card">
+	<h5 class="card-header">Databases references</h5>
+    <div class="card-body">
+        <div class="table-responsive">
+			<table id="example" class="display" style="width:100%">
+				<thead>
+					<tr>
+					<th scope="col">Release year</th>
+					<th scope="col">Database name</th>
+					<th scope="col">Status</th>
+					<th scope="col">Number of records</th>
+					<th scope="col">Number of non redundant records</th>
+					<th scope="col">Sequence length interval</th>
+					<th scope="col">Comments</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					<td>2002</td>
+					<td><a href="https://www.uniprot.org/" target="_blank">Uniprot Signal Peptide</a></td>
+					<td>Available</td>
+					<td>43007</td>
+					<td>40234</td>
+					<td>17 - 13100</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2002</td>
+					<td><a href="https://www.uniprot.org/" target="_blank">Uniprot Propeptide</a></td>
+					<td>Available</td>
+					<td>82122</td>
+					<td>63168</td>
+					<td>15 - 24984</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2002</td>
+					<td><a href="https://www.uniprot.org/" target="_blank">Uniprot Transit</a></td>
+					<td>Available</td>
+					<td>9353</td>
+					<td>9131</td>
+					<td>31 - 2628</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2002</td>
+					<td><a href="https://www.uniprot.org/" target="_blank">Uniprot Peptide</a></td>
+					<td>Available</td>
+					<td>9094</td>
+					<td>7504</td>
+					<td>2 - 3434</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2003</td>
+					<td><a href="http://aps.unmc.edu/AP/main.php" target="_blank">The Antimicrobial peptide database (APD3)</a></td>
+					<td>Not available</td>
+					<td>3167</td>
+					<td>3129</td>
+					<td>2 - 183</td>
+					<td>It was previously downloaded, currently the link is down</td>
+					</tr>
+					<tr>
+					<td>2005</td>
+					<td><a href="http://proline.bic.nus.edu.sg/spdb/" target="_blank">SPdb</a></td>
+					<td>Available</td>
+					<td>5024</td>
+					<td>4857</td>
+					<td>11 - 5263</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2006</td>
+					<td><a href="http://erop.inbi.ras.ru/index.html" target="_blank">Erop-Moscow</a></td>
+					<td>Available</td>
+					<td>26697</td>
+					<td>25964</td>
+					<td>2 - 53</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2008</td>
+					<td><a href="http://phytamp.pfba-lab-tun.org/about.php" target="_blank">PhytAMP</a></td>
+					<td>Not available</td>
+					<td>273</td>
+					<td>272</td>
+					<td>6 - 94</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2008</td>
+					<td><a href="http://www.conoserver.org/" target="_blank">ConoServer</a></td>
+					<td>Available</td>
+					<td>7809</td>
+					<td>6685</td>
+					<td>4 - 448</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2009</td>
+					<td><a href="http://www.arachnoserver.org/mainMenu.html" target="_blank">ArachnoServer</a></td>
+					<td>Available</td>
+					<td>1838</td>
+					<td>1784</td>
+					<td>7 - 1411</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2010</td>
+					<td><a href="http://bactibase.hammamilab.org/main.php" target="_blank">BACTIBASE</a></td>
+					<td>Available</td>
+					<td>229</td>
+					<td>217</td>
+					<td>7 - 828</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2011</td>
+					<td><a href="http://yadamp.unisa.it/default.aspx" target="_blank">YADAMP</a></td>
+					<td>Available</td>
+					<td>2525</td>
+					<td>2525</td>
+					<td>5 - 45</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2011</td>
+					<td><a href="http://proteomics.ucsd.edu/Software/NeuroPedia/" target="_blank">NeuroPedia</a></td>
+					<td>Available</td>
+					<td>847</td>
+					<td>605</td>
+					<td>2 - 1129</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2011</td>
+					<td><a href="http://brainpeps.ugent.be/" target="_blank">BrainPeps</a></td>
+					<td>Available</td>
+					<td>252</td>
+					<td>233</td>
+					<td>2 - 230</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2012</td>
+					<td><a href="http://quorumpeps.ugent.be/" target="_blank">quorum-peps</a></td>
+					<td>Available</td>
+					<td>350</td>
+					<td>350</td>
+					<td>3 - 167</td>
+					<td>The data was downloaded from the resulting table (it does not present download tools)</td>
+					</tr>
+					<tr>
+					<td>2012</td>
+					<td><a href="http://split4.pmfst.hr/dadp/?" target="_blank">DADP</a></td>
+					<td>Available</td>
+					<td>2571</td>
+					<td>1793</td>
+					<td>1 - 66</td>
+					<td>The data was downloaded from the resulting table (it does not present download tools)</td>
+					</tr>
+					<tr>
+					<td>2012</td>
+					<td><a href="http://crdd.osdd.net/raghava/tumorhope/" target="_blank">TumorHoPe</a></td>
+					<td>Available</td>
+					<td>636</td>
+					<td>577</td>
+					<td>4 - 32</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2013</td>
+					<td><a href="https://webs.iiitd.edu.in/raghava/hemolytik/index.php" target="_blank">Hemolytik</a></td>
+					<td>Available</td>
+					<td>2970</td>
+					<td>1926</td>
+					<td>2 - 100</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2013</td>
+					<td><a href="http://www.camp.bicnirrh.res.in/index.php" target="_blank">CAMP</a></td>
+					<td>Available</td>
+					<td>8049</td>
+					<td>7662</td>
+					<td>5 - 255</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2013</td>
+					<td><a href="http://biotechlab.fudan.edu.cn/database/lamp/index.php" target="_blank">LAMP2</a></td>
+					<td>Available</td>
+					<td>22533</td>
+					<td>22279</td>
+					<td>2 - 99</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2013</td>
+					<td><a href="http://crdd.osdd.net/servers/avpdb/" target="_blank">AVPdb</a></td>
+					<td>Available</td>
+					<td>2683</td>
+					<td>2359</td>
+					<td>2 - 96</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2013</td>
+					<td><a href="http://crdd.osdd.net/servers/hipdb/" target="_blank">HIPdb</a></td>
+					<td>Available</td>
+					<td>981</td>
+					<td>888</td>
+					<td>2 - 62</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2014</td>
+					<td><a href="https://dbaasp.org/home" target="_blank">DBAASP</a></td>
+					<td>Available</td>
+					<td>16236</td>
+					<td>14205</td>
+					<td>1 - 190</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2015</td>
+					<td><a href="http://crdd.osdd.net/raghava/ahtpdb/" target="_blank">AHTPDB</a></td>
+					<td>Available</td>
+					<td>9342</td>
+					<td>1694</td>
+					<td>2 - 50</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2015</td>
+					<td><a href="http://crdd.osdd.net/raghava/cppsite/" target="_blank">CPPsite</a></td>
+					<td>Available</td>
+					<td>1855</td>
+					<td>1421</td>
+					<td>3 - 64</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2015</td>
+					<td><a href="https://webs.iiitd.edu.in/raghava/satpdb/index.html" target="_blank">SATPdb</a></td>
+					<td>Available</td>
+					<td>28373</td>
+					<td>16161</td>
+					<td>2 - 50</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2015</td>
+					<td><a href="http://clri.res.in/subramanian/tools/antiangiopred/dataset.html" target="_blank">AntiAngioPred</a></td>
+					<td>Available</td>
+					<td>257</td>
+					<td>202</td>
+					<td>10 - 67</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2016</td>
+					<td><a href="http://www.uwm.edu.pl/biochemia/index.php/en/biopep" target="_blank">BIOPEP</a></td>
+					<td>Available</td>
+					<td>4131</td>
+					<td>3550</td>
+					<td>4 - 133</td>
+					<td>The data was downloaded from the resulting table (it does not present download tools)</td>
+					</tr>
+					<tr>
+					<td>2016</td>
+					<td><a href="http://www.baamps.it/" target="_blank">BaAMPs</a></td>
+					<td>Available</td>
+					<td>990</td>
+					<td>200</td>
+					<td>4 - 54</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2016</td>
+					<td><a href="http://dramp.cpu-bioinfor.org/" target="_blank">DRAMP</a></td>
+					<td>Available</td>
+					<td>13728</td>
+					<td>4842</td>
+					<td>2 - 101</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2016</td>
+					<td><a href="http://www.allergenonline.org/about.shtml" target="_blank">AllergenOnline</a></td>
+					<td>Available</td>
+					<td>2167</td>
+					<td>2154</td>
+					<td>9 - 1770</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2018</td>
+					<td><a href="https://webs.iiitd.edu.in/raghava/antitbpdb/" target="_blank">AntiTbPdb</a></td>
+					<td>Available</td>
+					<td>990</td>
+					<td>402</td>
+					<td>3 - 224</td>
+					<td>-</td>
+					</tr>
+					<tr>
+					<td>2019</td>
+					<td><a href="http://omicsbase.com/BioDADPep/" target="_blank">BioDaDpep</a></td>
+					<td>Available</td>
+					<td>2553</td>
+					<td>1138</td>
+					<td>2 - 60</td>
+					<td>The data was downloaded manually from the resulting table.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+    </div>
+</div>
+
+<script src="/js/dataTables.buttons.min.js"></script>
+<script src="/js/buttons.html5.min.js"></script>
+<script src="/js/pdfmake.min.js"></script>
+<script src="/js/buttons.flash.min.js"></script>
+<script src="/js/vfs_fonts.js"></script>
+
+<script>
+	
+    $('#example').DataTable({
+		"order": [[ 0, "desc" ]],
+		dom: 'Bfrtip',
+        buttons: [
+            { extend: 'pdf', text: 'Download table in PDF', orientation: 'landscape', pageSize: 'LEGAL' },
+			{ extend: 'csv', text: 'Download table in CSV' }
+        ]
+		//"bFilter": false,
+		//"bLengthChange": false,
+		//"pageLength": 20
+	});	
+</script>
