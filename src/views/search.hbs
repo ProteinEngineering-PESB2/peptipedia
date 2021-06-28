@@ -22,7 +22,7 @@
                 <option>Propeptide</option>
                 <option>Signal</option>
                 <option>Transit</option>
-                <option>Sensorial</option>
+                <option>Cell sensing</option>
                 <option>Drug delivery vehicle</option>
                 <option>Therapeutic</option>
                 <option>Other activity</option>
@@ -171,7 +171,7 @@
         $.each($('#activity_lvl_1.selectpicker').selectpicker('val'), function( index, value ) {     
             $('#btn1').attr('disabled', false)
             $('#btn1Info').attr('hidden', true)
-            if ($('#activity_lvl_1.selectpicker').selectpicker('val').includes("Sensorial")){  
+            if ($('#activity_lvl_1.selectpicker').selectpicker('val').includes("Cell sensing")){  
                 if(actuales.includes("Quorum sensing", "Chemotactic", "Cell-cell communication", "Defense") == false){
                     $("#activity_lvl_2").append('<option value="Quorum sensing">Quorum sensing</option>');
                     $("#activity_lvl_2").append('<option value="Chemotactic">Chemotactic</option>');
@@ -606,8 +606,9 @@ $("#ex2").on("slide", function(slideEvt) {
         var now = new Date().getTime();
         
         $.ajax({
-            //'url': "http://localhost/api/search",
-            'url': "http://peptipedia.cl/api/search",
+            //'url': "http://localhost:8080/api/search",
+            //'url': "http://peptipedia.cl/api/search",
+            'url': "https://peptipedia.cl/api/search",
             'method': "POST",
             'data' : { 
                 "activity_lvl_1" : $('#activity_lvl_1').selectpicker('val'),

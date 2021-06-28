@@ -62,7 +62,7 @@ update_col.update_one({
     'Proteolytic': "Activity related to the breakdown of proteins into peptides or aminoacids.",
     'Quorumsensing': "Regulates gene expression for cell population regulation.",
     'Regulatoryactivity': "The molecule is involved in regulatory process in a cell or organism.",
-    'Sensorial': "Activities related to cell detection mechanisms, such as quorum sensing, chemotactic movement, cell-to-cell communication, defense mechanisms, among others.",
+    'Cell sensing': "Activities related to cell detection mechanisms, such as quorum sensing, chemotactic movement, cell-to-cell communication, defense mechanisms, among others.",
     'Signal': "Used as a post-translational modification or translocation, because these peptides are useful for marking the protein secretion pathway and target location. These molecules are commonly used for the recombinant protein production, diagnosis and vaccination.",
     'Sodiumchannelblocker': "Molecule that inhibits the sodium influx through the sodium channel.",
     'Spermicidal': "This molecules can affect the mobility or viability of sperm.",
@@ -88,4 +88,4 @@ update_col.update_one({
   }
 }, upsert=False)
 
-print('listoko')
+print('ok')

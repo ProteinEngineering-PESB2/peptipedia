@@ -50,7 +50,8 @@ $("#btn1").click(function(){
     $('#error_alert').attr('hidden', true);   
         $.ajax({
             //'url': "http://localhost/classification/results",
-            'url': "http://peptipedia.cl/classification/results",
+            //'url': "http://peptipedia.cl/classification/results",
+            'url': "https://peptipedia.cl/classification/results",
             'method': 'POST',
             'data' : { "sequences" : $("#exampleFormControlTextarea1").val(), "time": now}
         }).done( function(data) {

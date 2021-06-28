@@ -3,11 +3,11 @@ var fs = require('fs');
 var http = require('http');
 var https = require('https');
 
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/peptipedia.cl/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/peptipedia.cl/cert.pem', 'utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/peptipedia.cl/chain.pem', 'utf8');
+//const privateKey = fs.readFileSync('/etc/letsencrypt/live/peptipedia.cl/privkey.pem', 'utf8');
+//const certificate = fs.readFileSync('/etc/letsencrypt/live/peptipedia.cl/cert.pem', 'utf8');
+//const ca = fs.readFileSync('/etc/letsencrypt/live/peptipedia.cl/chain.pem', 'utf8');
 
-const credentials = {key: privateKey, cert: certificate, ca: ca};
+//const credentials = {key: privateKey, cert: certificate, ca: ca};
 
 const express = require('express'); //app se ejecutara en index.js
 const path = require('path');
@@ -36,7 +36,7 @@ app.engine('.hbs', exphbs({
             }
         },
         calculation_matrix: function(name, value, indice){
-            activities = ['Propeptide', 'Signal', 'Transit', 'Sensorial', 'Drug delivery vehicle', 'Therapeutic', 'Other activity', 'Neurological activity', 'Immunological activity', 'non_activity']
+            activities = ['Propeptide', 'Signal', 'Transit', 'Cell sensing', 'Drug delivery vehicle', 'Therapeutic', 'Other activity', 'Neurological activity', 'Immunological activity', 'non_activity']
             for (let index = 0; index < activities.length; index++) {
                 if (name == activities[index]){
                     return value[indice];
@@ -47,7 +47,7 @@ app.engine('.hbs', exphbs({
                 return value[index];
         },
         matrix: function(name, value){
-            activities = ['Propeptide', 'Signal', 'Transit', 'Sensorial', 'Drug delivery vehicle', 'Therapeutic', 'Other activity', 'Neurological activity', 'Immunological activity', 'non_activity']
+            activities = ['Propeptide', 'Signal', 'Transit', 'Cell sensing', 'Drug delivery vehicle', 'Therapeutic', 'Other activity', 'Neurological activity', 'Immunological activity', 'non_activity']
             for (let index = 0; index < activities.length; index++) {
                 if (name == activities[index]){
                     return value;
@@ -92,12 +92,12 @@ app.use(require('./routes/routes'));//requerimos el archivo de rutas de index
 app.use(express.static(path.join(__dirname, 'public')));
 
 const httpServer = http.createServer(app);
-const httpsServer = https.createServer(credentials, app);
+//const httpsServer = https.createServer(credentials, app);
 
 httpServer.listen(8080);
-httpsServer.listen(8443);
+//httpsServer.listen(8443);
 
 module.exports = app; //exportamos para requerirlo de otro lado
 module.exports = httpServer;
-module.exports = httpsServer;
+//module.exports = httpsServer;
 

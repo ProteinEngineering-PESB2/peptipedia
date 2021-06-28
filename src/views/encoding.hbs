@@ -60,7 +60,8 @@ $("#btn1").click(function(){
     $('#error_alert').attr('hidden', true);   
         $.ajax({
             //'url': "http://localhost/encoding/results",
-            'url': "http://peptipedia.cl/encoding/results",
+            //'url': "http://peptipedia.cl/encoding/results",
+            'url': "https://peptipedia.cl/encoding/results",
             'method': 'POST',
             'data' : { "sequences" : $("#exampleFormControlTextarea1").val(), "time": now, "option" : $("#exampleFormControlSelect1").val()}
         }).done( function(data) {

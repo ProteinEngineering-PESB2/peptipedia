@@ -33,7 +33,7 @@ indexCtrl.renderDetails = async(req,res) =>{ //ruta de about
     if (req.params.id == 'Propeptide' || 
     req.params.id == 'Signal' || 
     req.params.id == 'Transit' ||
-    req.params.id == 'Sensorial' ||
+    req.params.id == 'Cellsensing' ||
     req.params.id == 'Drugdeliveryvehicle' ||
     req.params.id == 'Therapeutic' ||
     req.params.id == 'Otheractivity' ||
@@ -53,6 +53,10 @@ indexCtrl.renderDetails = async(req,res) =>{ //ruta de about
         if(req.params.id == 'Immunologicalactivity'){
             req.params.id = 'Immunological activity'
         }
+        if(req.params.id == 'Cellsensing'){
+            req.params.id = 'Cell sensing'
+        }
+        
         const statistics = await Statistic.find({"Name": req.params.id}).lean();
         const statistics_full = await Statistic.find({$and:[{'Name': {$ne : "Total number of records"}},{'Name': {$ne : "Total number of organism"}},{'Name': {$ne : "Total PDB codes"}},{'Name': {$ne : "Histogram1"}},{'Name': {$ne : "PieChart1"}},{'Name': {$ne : "Total Uniprot codes"}},{'Name': {$ne : "Glossary"}}]}).lean();
         res.render('details', {statistics, statistics_full});
@@ -61,11 +65,11 @@ indexCtrl.renderDetails = async(req,res) =>{ //ruta de about
     }
 };
 indexCtrl.getDatabase = async(req, res) =>{
-    const peptides = await Peptide.find().lean(); //buscamos todas las notas y las traemos en json
+    const peptides = await Peptide.find().lean();
     res.send(peptides);
 }
 indexCtrl.getDatabasePerActivity = async(req, res) =>{
-    const activities = await Activity.find({"activity": req.params.id}).lean(); //buscamos todas las notas y las traemos en json
+    const activities = await Activity.find({"activity": req.params.id}).lean();
     res.send(activities);   
 }
 
@@ -117,7 +121,7 @@ indexCtrl.getSearch = async(req, res) =>{
     }
     for (let index = 0; index < all_activities.length; index++) {
         if (all_activities[index] == 'Quorum sensing' || all_activities[index] == 'Chemotactic' || all_activities[index] == 'Cell-cell communication' || all_activities[index] == 'Defense'){    
-            var flag = all_activities.indexOf('Sensorial');
+            var flag = all_activities.indexOf('Cell sensing');
             delete all_activities[flag];
         }
         if (all_activities[index] == 'Cell-penetrating' || all_activities[index] == "Blood-brain barrier crossing"){    

@@ -49,7 +49,8 @@
         var now = new Date().getTime();
         $.ajax({
             //'url': "http://localhost/alignment/results",
-            'url': "http://peptipedia.cl/alignment/results",
+            //'url': "http://peptipedia.cl/alignment/results",
+            'url': "https://peptipedia.cl/alignment/results",
             'method': "POST",
             'data' : { "sequences" : $("#exampleFormControlTextarea1").val(), "time": now}
         }).done(function(data) {

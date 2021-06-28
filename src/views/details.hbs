@@ -242,6 +242,9 @@
         if(elem.id == 'Immunological activity'){
             elem.id = 'Immunologicalactivity'
         }
+        if(elem.id == 'Cell sensing'){
+            elem.id = 'Cellsensing'
+        }
         location.href = './'+elem.id;
     } 
 
@@ -394,9 +397,14 @@ if(actual_url[actual_url.length-1] == 'Neurologicalactivity'){
 if(actual_url[actual_url.length-1] == 'Immunologicalactivity'){
   actual_url[actual_url.length-1] = 'Immunological activity'
 }
+if(actual_url[actual_url.length-1] == 'Cellsensing'){
+  actual_url[actual_url.length-1] = 'Cell sensing'
+}
+
 $.ajax({
-    //'url': "http://localhost/api/database/"+actual_url[actual_url.length-1],
-    'url': "http://peptipedia.cl/api/database/"+actual_url[actual_url.length-1],
+    //'url': "http://localhost:8080/api/database/"+actual_url[actual_url.length-1],
+    //'url': "http://peptipedia.cl/api/database/"+actual_url[actual_url.length-1],
+    'url': "https://peptipedia.cl/api/database/"+actual_url[actual_url.length-1],
     'method': "GET",
     'contentType': 'application/json'
 }).done( function(data) {
@@ -430,6 +438,9 @@ var getSecForDetail = function(tbody, table){
 }
     if(actual_url[actual_url.length-1] == 'Signal Peptide'){
       actual_url[actual_url.length-1] = 'SignalPeptide'
+    }
+    if(actual_url[actual_url.length-1] == 'Cell sensing'){
+      actual_url[actual_url.length-1] = 'Cellsensing'
     }
     var dlAnchorElem = document.getElementById('dl_csv');
     dlAnchorElem.setAttribute("href", '/attachment/database/csv/'+actual_url[actual_url.length-1]+'.csv');

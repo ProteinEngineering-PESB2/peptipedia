@@ -14,6 +14,7 @@
 			{{#each peptides}}<h5 class="card-title">Charge:</h5><p class="card-text">{{'charge'}}</p>{{/each}}
 			{{#each peptides}}<h5 class="card-title">Charge density:</h5><p class="card-text">{{'charge_density'}}</p>{{/each}}
 			{{#each peptides}}<h5 class="card-title">Is modified:</h5><p class="card-text">{{'is_modify'}}</p>{{/each}}
+			{{#each peptides}}{{#if patente}}<h5 class="card-title">The peptide is patented</h5>{{/if}}{{/each}}
 			</div>
       	</div>
 		<div class="card-group col-sm-12">
@@ -46,6 +47,8 @@
 			{{#each peptides}}{{#if Virus_antiviral}}<h5 id="Virus_antiviral" class="card-title">Virus_antiviral:</h5><p class="card-text">{{'Virus_antiviral'}}</p>{{/if}}{{/each}}
 			{{#each peptides}}{{#if Family_virus}}<h5 id="Family_virus" class="card-title">Family_virus:</h5><p class="card-text">{{'Family_virus'}}</p>{{/if}}{{/each}}
 			{{#each peptides}}{{#if Source_viral}}<h5 id="Source_viral" class="card-title">Source_viral:</h5><p class="card-text">{{'Source_viral'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if is_IC50_HIV_predict}}<h5 id="is_IC50_HIV_predict" class="card-title">is_IC50_HIV_predict:</h5><p class="card-text">{{'is_IC50_HIV_predict'}}</p>{{/if}}{{/each}}
+			{{#each peptides}}{{#if is_IC50_viral_predict}}<h5 id="is_IC50_viral_predict" class="card-title">is_IC50_viral_predict:</h5><p class="card-text">{{'is_IC50_viral_predict'}}</p>{{/if}}{{/each}}
 			{{#each peptides}}{{#if IC50_antiviral}}<h5 id="IC50_antiviral" class="card-title">IC50_antiviral:</h5><p class="card-text">{{'IC50_antiviral'}}</p>{{/if}}{{/each}}
 			{{#each peptides}}{{#if unit_IC50_antiviral}}<h5 id="unit_IC50_antiviral" class="card-title">unit_IC50_antiviral:</h5><p class="card-text">{{'unit_IC50_antiviral'}}</p>{{/if}}{{/each}}
 			{{#each peptides}}{{#if ic50_anti_hipertensive}}<h5 id="ic50_anti_hipertensive" class="card-title">ic50_anti_hipertensive:</h5><p class="card-text">{{'ic50_anti_hipertensive'}}</p>{{/if}}{{/each}}
@@ -159,8 +162,8 @@
 					{{#each peptides}}text: "{{tree Transit 'Transit'}}{{/each}}",
 				},
 				{
-					id: "Sensorial",
-					{{#each peptides}}text: "{{tree Sensorial 'Sensorial'}}{{/each}}",
+					id: "Cellsensing",
+					{{#each peptides}}text: "{{tree Cell sensing 'Cell sensing'}}{{/each}}",
 					nodes: [
 						{
 							id: "Quorumsensing",
@@ -443,7 +446,7 @@
 			if($('#link_uniprot').text() == "Not Found"){				
 					$('#link_uniprot').contents().unwrap();
 			}
-			var ids = ['Propeptide', 'Signal', 'Transit', 'Antimicrobial', 'Antihypertensive', 'Allergen', 'AntiAngiogenic', 'Quorumsensing', 'Antiviral', 'Antibiofilm', 'AntiGramP', 'AntiGramL', 'Antibacterialantibiotic', 'Antifungal', 'Antiparasitic', 'Antitumour', 'Antiprotozoal', 'Cellpenetrating', 'Neuropeptide', 'Sensorial', 'Bloodbrainbarriercrossing', 'AntiDiabetic', 'Toxic', 'Chemotactic', 'Antilisterial', 'Hemolytic', 'Cytolytic', 'Cancercell', 'Insecticidal', 'AntiHIV', 'Antiinflammatory', 'Mammalliancell', 'Woundhealing', 'AntiHSV', 'Enzymeinhibitor', 'Antinociceptive', 'Proteolytic', 'Immunomodulatory', 'Drugdeliveryvehicle', 'Cellcellcommunication', 'AntiTB', 'Anurodefense', 'Therapeutic', 'Otheractivity', 'Neurologicalactivity', 'Immunologicalactivity', 'Metabolic', 'Antimalarialantiplasmodial', 'Anticancer', 'Regulatory', 'AntiYeast', 'AntiMRSA', 'Bacteriocins', 'Bioactive', 'Antioxidant', 'Defense', 'Brainpeptide', 'Surfaceimmobilized', 'nonactivity']
+			var ids = ['Propeptide', 'Signal', 'Transit', 'Antimicrobial', 'Antihypertensive', 'Allergen', 'AntiAngiogenic', 'Quorumsensing', 'Antiviral', 'Antibiofilm', 'AntiGramP', 'AntiGramL', 'Antibacterialantibiotic', 'Antifungal', 'Antiparasitic', 'Antitumour', 'Antiprotozoal', 'Cellpenetrating', 'Neuropeptide', 'Cellsensing', 'Bloodbrainbarriercrossing', 'AntiDiabetic', 'Toxic', 'Chemotactic', 'Antilisterial', 'Hemolytic', 'Cytolytic', 'Cancercell', 'Insecticidal', 'AntiHIV', 'Antiinflammatory', 'Mammalliancell', 'Woundhealing', 'AntiHSV', 'Enzymeinhibitor', 'Antinociceptive', 'Proteolytic', 'Immunomodulatory', 'Drugdeliveryvehicle', 'Cellcellcommunication', 'AntiTB', 'Anurodefense', 'Therapeutic', 'Otheractivity', 'Neurologicalactivity', 'Immunologicalactivity', 'Metabolic', 'Antimalarialantiplasmodial', 'Anticancer', 'Regulatory', 'AntiYeast', 'AntiMRSA', 'Bacteriocins', 'Bioactive', 'Antioxidant', 'Defense', 'Brainpeptide', 'Surfaceimmobilized', 'nonactivity']
 			$( document ).ready(function() {
 				for (i = 0; i < ids.length; i++) {
 					if($('#'+ids[i]).text() == false || $('#'+ids[i]).text() == "false"){

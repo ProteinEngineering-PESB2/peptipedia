@@ -170,6 +170,9 @@
         if(elem.id == 'Immunological activity'){
             elem.id = 'Immunologicalactivity'
         }
+        if(elem.id == 'Cell sensing'){
+            elem.id = 'Cellsensing'
+        }
         location.href = 'details/'+elem.id;
     } 
   var strings = ("{{#each statistics}}{{calculation Name 'PieChart1' Labels}}{{/each}}");
@@ -196,8 +199,9 @@ Plotly.newPlot('hist1', data, layout);
 
 
 $.ajax({
-    //'url': "http://localhost/api/database",
-    'url': "http://peptipedia.cl/api/database",
+    //'url': "http://localhost:8080/api/database",
+    //'url': "http://peptipedia.cl/api/database",
+    'url': "https://peptipedia.cl/api/database",
     'method': "GET",
     'contentType': 'application/json'
 }).done( function(data) {
